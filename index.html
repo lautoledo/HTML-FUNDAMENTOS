@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fundamentos de HTML</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="/HTML-FUNDAMENTOS/img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="/HTML-FUNDAMENTOS/img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+  <ul>
+    <li><a href="#home">Home</a></li>
+
+    <li><a href="#HTML Basic">HTML Basic</a></li>
+    <li><a href="#HTML Elements">HTML Elements</a></li>
+    <li><a href="#HTML Attributes">HTML Attributes</a></li>
+    <li><a href="#HTML Headings">HTML Headings</a></li>
+    <li><a href="#HTML Paragraphs">HTML Paragraphs</a></li>
+    <li><a href="#HTML Styles">HTML Styles</a></li>
+    <li><a href="#HTML Formatting">HTML Formatting</a></li>
+    <li><a href="#HTML Quotations">HTML Quotations</a></li>
+    <li><a href="#HTML Comments">HTML Comments</a></li>
+    <li><a href="#HTML Colors">HTML Colors</a></li>
+    <li><a href="#HTML Links">HTML Links</a></li>
+    <li><a href="#HTML Favicon">HTML Favicon</a></li>
+
+    <li><a href="#HTML Table">HTML Table</a></li>
+    <li><a href="#HTML List">HTML List</a></li>
+    <li><a href="#HTML Block & Inline">HTML Block & Inline</a></li>
+    <li><a href="#HTML Div">HTML Div</a></li>
+    <li><a href="#HTML Classes">HTML Classes</a></li>
+    <li><a href="#HTML Id">HTML Id</a></li>
+    <li><a href="#HTML Iframes">HTML Iframes</a></li>
+    <li><a href="#HTML JavaScript">HTML JavaScript</a></li>
+    <li><a href="#HTML Semantics">HTML Semantics</a></li>
+    <li><a href="#HTML Style Guide">HTML Style Guide</a></li>
+    <li><a href="#HTML Entities">HTML Entities</a></li>
+    <li><a href="#HTML Symbols">HTML Symbols</a></li>
+  </ul>
+</nav>
+
+<div class="content">
+  <!-- Conteúdo da página -->
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+  document.getElementById('menu-toggle').addEventListener('click', function() {
+    var menu = document.getElementById('menu');
+    if (menu.style.left === "-250px") {
+      menu.style.left = "0";
+    } else {
+      menu.style.left = "-250px";
+    }
+  });
+});
+</script>
+
+</body>
+</html>

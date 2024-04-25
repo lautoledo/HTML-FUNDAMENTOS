@@ -1,0 +1,100 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: #000000;
+  color: white;
+  padding: 40px 20px;
+  display: flex;
+  justify-content:center;
+  align-items: center;
+}
+
+.header-content {
+  display: flex;
+  align-items: center;
+}
+
+.logo {
+  width: 70px;
+  height: 70px;
+  margin: 0 auto;
+}
+
+.github-button {
+  background-color: #000000;
+  border: 1px;
+  color: #fff;
+  align-items: center;
+  text-decoration-line: underline;
+  text-decoration-thickness: 1px;
+  box-align: right;
+  align-items: right;
+  margin-left: 600px;
+}
+
+.github-button:hover {
+  background-color: #000000;
+}
+
+#menu-toggle {
+  background: none;
+  border: none;
+  color: white;
+  font-size: 1.2rem;
+  cursor: pointer;
+  order: -1;
+  margin-right: 600px;
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #333;
+  padding-top: 60px;
+  overflow-y: auto; /* Adiciona rolagem vertical */
+  transition: left 0.3s ease;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  padding: 10px;
+}
+
+nav ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.content {
+  margin: 0 auto;
+  max-width: 800px;
+  padding: 20px;
+}
+
+.content h2 {
+  color: #333;
+  margin-top: 40px;
+}
+
+.content ul {
+  list-style: none;
+  padding: 0;
+}
+
+.content ul li {
+  margin-bottom: 10px;
+}
+
+.content p {
+  color: #666;
+}
