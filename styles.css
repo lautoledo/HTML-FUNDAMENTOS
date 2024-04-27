@@ -1,6 +1,7 @@
 body {
   margin: 0;
   padding: 0;
+  background-color: rgba(254, 220, 180, 0.507);
 }
 
 header {
@@ -98,3 +99,106 @@ nav ul li a {
 .content p {
   color: #666;
 }
+
+.w3-content,
+.w3-auto {
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+.w3-content {
+    max-width: 980px
+}
+
+.w3-col.m6,
+    .w3-half {
+        width: 49.99999%
+    }
+
+.w3-padding-large {
+      padding: 12px 24px !important
+  }
+
+.w3-padding-64 {
+      padding-top: 64px !important;
+      padding-bottom: 64px !important
+  }
+
+  .w3-round-small {
+    border-radius: 2px
+}
+
+.w3-round,
+.w3-round-medium {
+    border-radius: 4px
+}
+
+.w3-round-large {
+    border-radius: 8px
+}
+
+.w3-round-xlarge {
+    border-radius: 16px
+}
+
+.w3-round-xxlarge {
+    border-radius: 32px
+}
+
+
+
+.w3-opacity,
+.w3-hover-opacity:hover {
+    opacity: 0.60
+}
+
+.w3-opacity-off,
+.w3-hover-opacity-off:hover {
+    opacity: 1
+}
+
+.w3-opacity-max {
+    opacity: 0.25
+}
+
+.w3-opacity-min {
+    opacity: 0.75
+}
+
+.w3-large {
+  font-size: 20px !important
+}
+
+.w3-tag {
+  background-color: #000;
+  color: #fff;
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+  text-align: center
+}
+
+.w3-hide-small {
+  display: none !important
+}
+
+.w3-round {
+  box-align: right;
+  align-items: right;
+  margin-left: 600px;
+  margin-top: -600px;
+}
+
+.w3-image {
+  box-align: right;
+  align-items: right;
+  margin-left: 300;
+  max-width: 100%;
+  height: 570px;
+  width: 70px;
+  top: 0;
+  right: -250px;
+}
+
+
+
