@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="/HTML-FUNDAMENTOS/img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="/HTML-FUNDAMENTOS/img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+    <h1>ELEMENTOS HTML</h1>
+    
+
+    <h2>TAGS</h2>
+    <P>O elemento HTML é tudo, desde a tag inicial até a tag final:</P>
+    <p><strong> <code>&lt;tagname&gt;</code></strong> O conteúdo vai aqui... <strong> <code>&lt;tagname&gt;</code></strong></p>
+    <P>Exemplos de alguns elementos HTML:</P>
+    <p><strong> <code>&lt;h1&gt;</code></strong> Meu primeiro título <strong> <code>&lt;h1&gt;</code></strong></p>
+    <p><strong> <code>&lt;p&gt;</code></strong> Meu primeiro parágrafo. <strong> <code>&lt;p&gt;</code></strong></p>
+
+    
+
+</div> 
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+
+</body>
+</html>

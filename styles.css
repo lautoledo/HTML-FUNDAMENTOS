@@ -200,5 +200,26 @@ nav ul li a {
   right: -250px;
 }
 
+.cod {
+  font-size: 18px;
+}
+
+.code-container {
+  border: 1px solid #ccc;
+  color: #000000;
+  background-color: #cb93638e;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  font-size: 12px;
+}
+
+pre {
+  white-space: pre-wrap;
+}
+
+.implemented-html {
+  margin-top: 10px;
+}
 
 

@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Basic</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="/HTML-FUNDAMENTOS/img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="/HTML-FUNDAMENTOS/img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="#home">Home</a></li>
+  
+      <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+    <h1>EXEMPLOS BÁSICOS DE HTML</h1>
+
+    <h2>Documentos HTML</h2>
+
+    <div class="cod">
+    
+    <p>Todos os documentos HTML devem começar com uma declaração de tipo de documento:<strong> <code>&lt;!DOCTYPE html&gt;</code></strong>. </p>
+
+    <p>O próprio documento HTML começa <strong><code>&lt;html&gt;</code></strong> e termina com <strong><code>&lt;/html&gt;</code> </strong>.</p>
+
+    <p>A parte visível do documento HTML está entre <strong><code>&lt;body&gt;</code></strong> e <strong><code>&lt;/body&gt;</code></strong>. </p>
+
+    </div>
+
+    <h2>1. ESTRUTURA HTML</h2>
+    <div class="code-container">
+    <pre>
+      <strong><code>&lt;!DOCTYPE html&gt;
+  &lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;meta charset="UTF-8"&gt;
+    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+    &lt;title&gt;My Page&lt;/title&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+    &lt;h1&gt;Hello, world!&lt;/h1&gt;
+    &lt;p&gt;This is a basic HTML page.&lt;/p&gt;
+  &lt;/body&gt;
+  &lt;/html&gt;</code></strong>
+</pre> 
+</div>
+
+<h3>Exemplos:</h3>
+<div class="implemented-html">
+  <!--Implemented HTML here -->
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Page</title>
+  </head>
+  <body>
+    <h1>Hello, world!</h1>
+    <p>This is a basic HTML page.</p>
+  </body>
+  </html>
+</div>
+
+
+<h2>2. TÍTULOS E PARÁGRAFOS</h2>
+<p>Os títulos HTML são definidos com as tags <strong><code>&lt;h1&gt;</code></strong> to <strong><code>&lt;h6&gt;</code></strong>.</p>
+<p><strong><code>&lt;h1&gt;</code></strong> define o título mais importante. <strong><code>&lt;h6&gt;</code></strong> define o título menos importante: </p>
+<p>Os parágrafos HTML são definidos com a <strong><code>&lt;p&gt;</code></strong> tag: </p>
+
+
+<div class="code-container">
+
+<pre>
+  <strong><code>&lt;h1&gt;Heading 1&lt;/h1&gt;
+&lt;h2&gt;Heading 2&lt;/h2&gt;
+&lt;h3&gt;Heading 3&lt;/h3&gt;
+&lt;p&gt;This is a paragraph.&lt;/p&gt;</code></strong>
+</pre>
+</div>
+
+<h3>Exemplos:</h3>
+<div class="implemented-html">
+<!--Implemented HTML here -->
+  <h1>Heading 1</h1>
+  <h2>Heading 2</h2>
+  <h3>Heading 3</h3>
+  <p>This is a paragraph.</p>
+</div>
+
+
+
+
+</div> 
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+
+</body>
+</html>
