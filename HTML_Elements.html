@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Elements</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+    <h1>ELEMENTOS HTML</h1>
+    
+
+    <h2>TAGS</h2>
+    <P>O elemento HTML é tudo, desde a tag inicial até a tag final:</P>
+    <p><strong> <code>&lt;tagname&gt;</code></strong> O conteúdo vai aqui... <strong> <code>&lt;tagname&gt;</code></strong></p>
+    <P>Exemplos de alguns elementos HTML:</P>
+    <p><strong> <code>&lt;h1&gt;</code></strong> Meu primeiro título <strong> <code>&lt;h1&gt;</code></strong></p>
+    <p><strong> <code>&lt;p&gt;</code></strong> Meu primeiro parágrafo. <strong> <code>&lt;p&gt;</code></strong></p>
+
+  
+
+
+<div class="code-container" style="align-items: center;">
+
+  <pre>
+    <strong><code>&lt;h1&gt;My first Heading 1&lt;/h1&gt;
+  &lt;p&gt;My first paragraph.&lt;/p&gt;</code></strong>
+  </pre>
+  </div>
+  
+  <h3>Exemplos:</h3>
+  <div class="implemented-html">
+  <!--Implemented HTML here -->
+    <h1>My first Heading 1</h1>
+    <p>My first paragraph.</p>
+  </div>
+
+  <h2>Exemplo explicado</h2>
+<p>O &lt;html&gt; elemento é o elemento raiz e define todo o documento HTML.</p>
+<p>Possui uma tag inicial &lt;html&gt; e uma tag final &lt;/html&gt;.</p>
+<p>Então, dentro do &lt;html&gt; elemento existe um &lt;body&gt; elemento:</p>
+
+<div class="code-container" style="align-items: center;">
+  <strong><code>&lt;body&gt;
+
+&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;
+
+&lt;/body&gt;</code></strong>
+
+</div>
+
+<p>O &lt;body&gt; elemento define o corpo do documento.</p>
+<p>Possui uma tag inicial &lt;body&gt; e uma tag final &lt;/body&gt;.</p>
+<p>Então, dentro do &lt;body&gt; elemento existem outros dois elementos: &lt;h1&gt; e &lt;p&gt;:</p>
+
+<div class="code-container" style="align-items: center;">
+
+  <strong><code>&lt;h1&gt;My First Heading&lt;/h1&gt;
+&lt;p&gt;My first paragraph.&lt;/p&gt;</code></strong>]
+
+</div>
+
+<p>O &lt;h1&gt; elemento define um título.</p>
+<p>Possui uma tag inicial &lt;h1&gt; e uma tag final &lt;/h1&gt;:</p>
+
+<div class="code-container" style="align-items: center;">
+
+  <strong><code>&lt;h1&gt;My First Heading&lt;/h1&gt;</code></strong>
+
+</div>
+
+<p>O &lt;p&gt; elemento define um parágrafo.</p>
+<p>Possui uma tag inicial &lt;p&gt; e uma tag final &lt;/p&gt;:</p>
+
+<div class="code-container" style="align-items: center;">
+
+  <strong><code>&lt;p&gt;My first paragraph.&lt;/p&gt;</code></strong>
+
+</div>
+
+<p>Nunca pule a tag final</p>
+<p>Alguns elementos HTML serão exibidos corretamente, mesmo se você esquecer a tag final:</p>
+
+<div class="code-container" style="align-items: center;">
+
+  <strong><code>&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;This is a paragraph
+&lt;p&gt;This is a paragraph
+
+&lt;/body&gt;
+&lt;/html&gt;</code></strong>
+
+</div>
+
+<h2>Elementos HTML vazios</h2>
+<p>Elementos HTML sem conteúdo são chamados de elementos vazios.</p>
+<p>A &lt;br&gt; tag define uma quebra de linha e é um elemento vazio sem tag de fechamento:</p>
+
+<p>Exemplo</p>
+<div class="code-container" style="align-items: center;">
+<code><strong>&lt;p&gt;This is a &lt;br&gt; paragraph with a line break.&lt;/p&gt;</code></strong>
+</div>
+
+<h2>HTML não diferencia maiúsculas de minúsculas</h2>
+<p>As tags HTML não diferenciam maiúsculas de minúsculas: <code>&lt;P&gt;</code>
+   significa o mesmo que <code>&lt;p&gt;</code>.</p>
+<p>O padrão HTML não exige tags em minúsculas, mas o W3C recomenda
+   letras minúsculas em HTML e exige letras minúsculas para tipos de documentos mais rígidos, como XHTML.</p>
+
+
+</div> 
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+
+</body>
+</html>

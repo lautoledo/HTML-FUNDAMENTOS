@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Atributtes</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+
+
+<h2>Atributos HTML</h2>
+<p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
+<p>Todos os elementos HTML podem ter atributos.</p>
+<p>Os atributos fornecem informações adicionais sobre os elementos.</p>
+<p>Os atributos são sempre especificados na tag inicial.</p>
+<p>Os atributos geralmente vêm em pares nome/valor como: nome="valor".</p>
+
+<h3>O atributo href</h3>
+<p>A &lt;a&gt; tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva:</p>
+
+<p>Exemplo</p>
+<p><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></p>
+<p>Você aprenderá mais sobre links em nosso capítulo <em>Links HTML</em>.</p>
+
+<h3>O atributo src</h3>
+<p>A &lt;img&gt; tag é usada para incorporar uma imagem em uma página HTML. O src atributo especifica o caminho para a imagem a ser exibida:</p>
+
+<p>Exemplo</p>
+<p><code>&lt;img src="img_girl.jpg"&gt;</code></p>
+<p>Existem duas maneiras de especificar o URL no src atributo:</p>
+
+<ol>
+    <li>URL absoluta – Links para uma imagem externa hospedada em outro site. Exemplo: <code>src="https://www.w3schools.com/images/img_girl.jpg"</code>.</li>
+    <li>URL relativo - Links para uma imagem hospedada no site. Aqui, o URL não inclui o nome de domínio. Se o URL começar sem barra, será relativo à página atual. Exemplo: <code>src="img_girl.jpg"</code>. Se o URL começar com uma barra, será relativo ao domínio. Exemplo: <code>src="/images/img_girl.jpg"</code>.</li>
+</ol>
+
+<p><strong>Notas:</strong> Imagens externas podem estar protegidas por direitos autorais. Se você não obtiver permissão para usá-lo, poderá estar violando as leis de direitos autorais. Além disso, você não pode controlar imagens externas; ele pode ser removido ou alterado repentinamente.</p>
+
+<h3>Os atributos de largura e altura</h3>
+<p>A &lt;img&gt; tag também deve conter os atributos <em>width</em> e <em>height</em>, que especificam a largura e a altura da imagem (em pixels):</p>
+
+<p>Exemplo</p>
+<p><code>&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code></p>
+
+<h3>O atributo alternativo</h3>
+<p>O atributo obrigatório para a &lt;img&gt; tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no src atributo ou ao usuário usar um leitor de tela.</p>
+
+<p>Exemplo</p>
+<p><code>&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</code></p>
+<p>Exemplo</p>
+<p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
+
+<p><code>&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;</code></p>
+<p>Você aprenderá mais sobre imagens em nosso capítulo <em>Imagens HTML</em>.</p>
+
+<h3>O atributo de estilo</h3>
+<p>O <em>style</em> atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
+
+<p>Exemplo</p>
+<p><code>&lt;p style="color:red;"&gt;This is a red paragraph.&lt;/p&gt;</code></p>
+<p>Você aprenderá mais sobre estilos em nosso capítulo <em>Estilos HTML</em>.</p>
+
+<h3>O atributo lang</h3>
+<p>Você deve sempre incluir o <em>lang</em> atributo dentro da &lt;html&gt; tag, para declarar o idioma da página web. O objetivo é ajudar os mecanismos de pesquisa e navegadores.</p>
+
+<p>O exemplo a seguir especifica o inglês como idioma:</p>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p>Os códigos de país também podem ser adicionados ao código do idioma no <em>lang</em> atributo. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.</p>
+
+<p>O exemplo a seguir especifica inglês como idioma e Estados Unidos como país:</p>
+
+<pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="en-US"&gt;
+&lt;body&gt;
+...
+&lt;/body&gt;
+&lt;/html&gt;</pre>
+
+<p>Você pode ver todos os códigos de idioma em nossa <a href="https://www.w3schools.com/tags/ref_language_codes.asp">Referência de código de idioma HTML</a>.</p>
+
+<h3>O atributo do título</h3>
+<p>O <em>title</em> atributo define algumas informações extras sobre um elemento.</p>
+
+<p>O valor do atributo <em>title</em> será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
+
+<p>Exemplo</p>
+<p><code>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</code></p>
+<p>Sugerimos: sempre use atributos em minúsculas</p>
+<p>O padrão HTML não exige nomes de atributos em letras minúsculas.</p>
+
+<p>O <em>title</em> (e todos os outros atributos) podem ser escritos em letras maiúsculas ou minúsculas, como <em>title</em> ou <em>TITLE</em>.</p>
+
+
+</div>
+</body>
+</html>
