@@ -212,6 +212,7 @@ nav ul li a {
   margin-bottom: 20px;
   overflow-x: auto;
   font-size: 12px;
+  font-weight: bold;
 }
 
 pre {
@@ -220,6 +221,103 @@ pre {
 
 .implemented-html {
   margin-top: 10px;
+  align-items: center;
+  text-align: center;
+  
 }
 
+.imagemcf {
+ margin: 100;
+ 
+}
 
+.cores {
+  text-align: center;
+}
+
+mark {
+  background-color: rgb(255, 168, 54);
+}
+
+table {
+  font-family: Arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th, td {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+th {
+  background-color: #f2f2f2;
+}
+
+tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.exemplo1 {
+  background-color: #de9595;
+}
+
+.exemplo2 {
+  background-color: #e6e3a0;
+}
+
+.exemplo3 {
+  background-color: #95c7de;
+  width:300px;
+  margin:auto;
+}
+
+.exemplo4 {
+  background-color: #8cecc4;
+}
+
+.exemplo5 {
+  background-color: #f9a9ea;
+}
+
+.exemplo6 {
+  background-color: #eeb269;
+}
+
+.exemplo7 {
+  width:30%;  
+  display:inline-block;
+}
+
+.mycontainer2 {
+  display: flex;
+}
+.mycontainer2 > div {
+  width:33%;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 33% 33% 33%;
+}
+
+.imgsemantics {
+  box-align: center;
+  align-items: center;
+  margin-bottom: 50px;
+  margin-top: 300px;
+  margin-left: -200px;
+  margin-right: 200px;
+}
+
+.fundosemantics {
+  border: 1px solid #ccc;
+  color: #000000;
+  background-color: #80b5e38e;
+  padding: 10px;
+  margin-bottom: 20px;
+  overflow-x: auto;
+  font-size: 12px;
+  font-weight: bold;
+}

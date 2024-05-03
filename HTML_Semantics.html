@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Semantics</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+    <div class="container theme-container">
+        <h2>Elementos Semânticos HTML</h2>
+        <p>Elementos semânticos = elementos com significado.</p>
+      
+        <h3>O que são elementos semânticos?</h3>
+        <p>Um elemento semântico descreve claramente seu significado tanto para o navegador quanto para o desenvolvedor.</p>
+        <p>Exemplos de elementos não semânticos: <code>&lt;div&gt;</code> e <code>&lt;span&gt;</code> - Não dizem nada sobre o seu conteúdo.</p>
+        <p>Exemplos de elementos semânticos: <code>&lt;form&gt;</code>, <code>&lt;table&gt;</code>, e <code>&lt;article&gt;</code> - Define claramente seu conteúdo.</p>
+      
+        <h3>Elementos Semânticos em HTML</h3>
+        <p>Muitos sites contêm código HTML como: <code>&lt;div id="nav"&gt;</code>, <code>&lt;div class="header"&gt;</code>, <code>&lt;div id="footer"&gt;</code> para indicar navegação, cabeçalho e rodapé.</p>
+        <p>Em HTML existem alguns elementos semânticos que podem ser usados ​​para definir diferentes partes de uma página web:</p>
+      
+        <ul>
+          <li><code>&lt;article&gt;</code></li>
+          <li><code>&lt;aside&gt;</code></li>
+          <li><code>&lt;details&gt;</code></li>
+          <li><code>&lt;figcaption&gt;</code></li>
+          <li><code>&lt;figure&gt;</code></li>
+          <li><code>&lt;footer&gt;</code></li>
+          <li><code>&lt;header&gt;</code></li>
+          <li><code>&lt;main&gt;</code></li>
+          <li><code>&lt;mark&gt;</code></li>
+          <li><code>&lt;nav&gt;</code></li>
+          <li><code>&lt;section&gt;</code></li>
+          <li><code>&lt;summary&gt;</code></li>
+          <li><code>&lt;time&gt;</code></li>
+        </ul>
+        <div class="w3-round">
+
+        <div class="imgsemantics">
+            <img src="/img/semantics.gif">
+        </div>
+
+    </div>
+      
+        <h2>Elemento HTML &lt;section&gt;</h2>
+        <p>O <code>&lt;section&gt;</code> elemento define uma seção em um documento.</p>
+        <p>De acordo com a documentação HTML do W3C: "Uma seção é um agrupamento temático de conteúdo, normalmente com um título."</p>
+        <p>Exemplos de onde um <code>&lt;section&gt;</code> elemento pode ser usado:</p>
+        <ul>
+          <li>Capítulos</li>
+          <li>Introdução</li>
+          <li>Novos itens</li>
+          <li>Informações de contato</li>
+        </ul>
+        <p>Uma página da web normalmente pode ser dividida em seções para introdução, conteúdo e informações de contato.</p>
+        <h3>Exemplo:</h3>
+        <div class="code-container">
+          <code><pre>
+      &lt;section&gt;
+        &lt;h1&gt;WWF&lt;/h1&gt;
+        &lt;p&gt;The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.&lt;/p&gt;
+      &lt;/section&gt;
+      
+      &lt;section&gt;
+        &lt;h1&gt;WWF's Panda symbol&lt;/h1&gt;
+        &lt;p&gt;The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.&lt;/p&gt;
+      &lt;/section&gt;
+          </pre></code>
+        </div>
+      
+        <h2>Elemento HTML &lt;article&gt;</h2>
+        <p>O <code>&lt;article&gt;</code> elemento especifica conteúdo independente e independente.</p>
+        <p>Um artigo deve fazer sentido por si só e deve ser possível distribuí-lo independentemente do resto do site.</p>
+        <p>Exemplos de onde o <code>&lt;article&gt;</code> elemento pode ser usado:</p>
+        <ul>
+          <li>Postagens no fórum</li>
+          <li>Postagens no blog</li>
+          <li>Comentários do usuário</li>
+          <li>Cartões de produto</li>
+          <li>Artigos de jornal</li>
+        </ul>
+        <h3>Exemplo:</h3>
+        <div class="code-container">
+          <code><pre>
+      &lt;article&gt;
+        &lt;h2&gt;Google Chrome&lt;/h2&gt;
+        &lt;p&gt;Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!&lt;/p&gt;
+      &lt;/article&gt;
+      
+      &lt;article&gt;
+        &lt;h2&gt;Mozilla Firefox&lt;/h2&gt;
+        &lt;p&gt;Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.&lt;/p&gt;
+      &lt;/article&gt;
+      
+      &lt;article&gt;
+        &lt;h2&gt;Microsoft Edge&lt;/h2&gt;
+        &lt;p&gt;Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.&lt;/p&gt;
+      &lt;/article&gt;
+          </pre></code>
+        </div>
+        <div class="container theme-container">
+            <h2>Aninhando <code>&lt;article&gt;</code> em <code>&lt;section&gt;</code> ou vice-versa?</h2>
+            <p>O <code>&lt;article&gt;</code> elemento especifica conteúdo independente e independente.</p>
+            <p>O <code>&lt;section&gt;</code> elemento define a seção em um documento.</p>
+            <p>Podemos usar as definições para decidir como aninhar esses elementos? Não nós não podemos!</p>
+            <p>Assim, você encontrará páginas HTML com <code>&lt;section&gt;</code> elementos contendo <code>&lt;article&gt;</code> elementos e <code>&lt;article&gt;</code> elementos contendo <code>&lt;section&gt;</code> elementos.</p>
+          
+            <h2>Elemento HTML <code>&lt;cabeçalho&gt;</code></h2>
+            <p>O <code>&lt;header&gt;</code> elemento representa um contêiner para conteúdo introdutório ou um conjunto de links de navegação.</p>
+            <p>Um <code>&lt;header&gt;</code> elemento normalmente contém:</p>
+            <ul>
+              <li>um ou mais elementos de título (<code>&lt;h1&gt;</code> - <code>&lt;h6&gt;</code>)</li>
+              <li>logotipo ou ícone</li>
+              <li>informações de autoria</li>
+            </ul>
+            <p>Nota: Você pode ter vários <code>&lt;header&gt;</code> elementos em um documento HTML. No entanto, <code>&lt;header&gt;</code> não pode ser colocado dentro de um <code>&lt;footer&gt;</code> ou <code>&lt;address&gt;</code> outro <code>&lt;header&gt;</code> elemento.</p>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+              <code><pre>
+          &lt;article&gt;
+            &lt;header&gt;
+              &lt;h1&gt;What Does WWF Do?&lt;/h1&gt;
+              &lt;p&gt;WWF's mission:&lt;/p&gt;
+            &lt;/header&gt;
+            &lt;p&gt;WWF's mission is to stop the degradation of our planet's natural environment,
+            and build a future in which humans live in harmony with nature.&lt;/p&gt;
+          &lt;/article&gt;
+              </pre></code>
+            </div>
+          
+            <h2>Elemento HTML <code>&lt;rodapé&gt;</code></h2>
+            <p>O <code>&lt;footer&gt;</code> elemento define um rodapé para um documento ou seção.</p>
+            <p>Um <code>&lt;footer&gt;</code> elemento normalmente contém:</p>
+            <ul>
+              <li>informações de autoria</li>
+              <li>Informações sobre direitos autorais</li>
+              <li>informações de contato</li>
+              <li>Mapa do site</li>
+              <li>voltar ao topo links</li>
+              <li>documentos relacionados</li>
+            </ul>
+            <p>Você pode ter vários <code>&lt;footer&gt;</code> elementos em um documento.</p>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+              <code><pre>
+          &lt;footer&gt;
+            &lt;p&gt;Author: Hege Refsnes&lt;/p&gt;
+            &lt;p&gt;&lt;a href="mailto:hege@example.com"&gt;hege@example.com&lt;/a&gt;&lt;/p&gt;
+          &lt;/footer&gt;
+              </pre></code>
+            </div>
+          
+            <h2>Elemento HTML <code>&lt;nav&gt;</code></h2>
+            <p>O <code>&lt;nav&gt;</code> elemento define um conjunto de links de navegação.</p>
+            <p>Observe que NEM todos os links de um documento devem estar dentro de um <code>&lt;nav&gt;</code> elemento. O <code>&lt;nav&gt;</code> elemento destina-se apenas a grandes blocos de links de navegação.</p>
+            <p>Navegadores, como leitores de tela para usuários com deficiência, podem usar esse elemento para determinar se devem omitir a renderização inicial desse conteúdo.</p>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+              <code><pre>
+          &lt;nav&gt;
+            &lt;a href="/html/"&gt;HTML&lt;/a&gt; |
+            &lt;a href="/css/"&gt;CSS&lt;/a&gt; |
+            &lt;a href="/js/"&gt;JavaScript&lt;/a&gt; |
+            &lt;a href="/jquery/"&gt;jQuery&lt;/a&gt;
+          &lt;/nav&gt;
+              </pre></code>
+            </div>
+          
+            <h2>Elemento HTML <code>&lt;à parte&gt;</code></h2>
+            <p>O <code>&lt;aside&gt;</code> elemento define algum conteúdo além daquele em que está colocado (como uma barra lateral).</p>
+            <p>O <code>&lt;aside&gt;</code> conteúdo deve estar indiretamente relacionado ao conteúdo circundante.</p>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+              <code><pre>
+          &lt;p&gt;My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!&lt;/p&gt;
+          
+          &lt;aside&gt;
+          &lt;h4&gt;Epcot Center&lt;/h4&gt;
+          &lt;p&gt;Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.&lt;/p&gt;
+          &lt;/aside&gt;
+              </pre></code>
+            </div>
+          
+            <h2>Elementos HTML <code>&lt;figure&gt;</code> e <code>&lt;figcaption&gt;</code></h2>
+            <p>A <code>&lt;figure&gt;</code> tag especifica conteúdo independente, como ilustrações, diagramas, fotos, listagens de códigos, etc.</p>
+            <p>A <code>&lt;figcaption&gt;</code> tag define uma legenda para um <code>&lt;figure&gt;</code> elemento. O <code>&lt;figcaption&gt;</code> elemento pode ser colocado como o primeiro ou o último filho de um <code>&lt;figure&gt;</code> elemento.</p>
+            <p>O <code>&lt;img&gt;</code> elemento define a imagem/ilustração real.</p>
+            <h3>Exemplo</h3>
+            <div class="code-container">
+              <code><pre>
+          &lt;figure&gt;
+            &lt;img src="pic_trulli.jpg" alt="Trulli"&gt;
+            &lt;figcaption&gt;Fig1. - Trulli, Puglia, Italy.&lt;/figcaption&gt;
+          &lt;/figure&gt;
+              </pre></code>
+            </div>
+          
+            <h2>Por que elementos semânticos?</h2>
+            <p>De acordo com o W3C: “Uma Web semântica permite que os dados sejam compartilhados e reutilizados entre aplicações, empresas e comunidades”.</p>
+          
+            <h2>Elementos Semânticos em HTML</h2>
+            <p>Abaixo está uma lista de alguns dos elementos semânticos em HTML.</p>
+
+            <div class="fundosemantics">
+              <code><pre>
+          &lt;article&gt;    - Define conteúdo independente, autocontido.
+          &lt;aside&gt;      - Define conteúdo além do conteúdo da página.
+          &lt;details&gt;    - Define detalhes adicionais que o usuário pode visualizar ou ocultar.
+          &lt;figcaption&gt; - Define uma legenda para um elemento &lt;figure&gt;.
+          &lt;figure&gt;     - Especifica conteúdo independente, como ilustrações, diagramas, fotos,
+          listagens de códigos, etc.
+          &lt;footer&gt;     - Define um rodapé para um documento ou seção.
+          &lt;header&gt;     - Especifica um cabeçalho para um documento ou seção.
+          &lt;main&gt;       - Especifica o conteúdo principal de um documento.
+          &lt;mark&gt;       - Define texto marcado/destacado.
+          &lt;nav&gt;        - Define links de navegação.
+          &lt;section&gt;    - Define uma seção em um documento.
+          &lt;summary&gt;    - Define um título visível para um elemento &lt;details&gt;.
+          &lt;time&gt;       - Define uma data/hora.
+              </pre></code>
+            </div>
+        
+    
+      
+
+
+
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

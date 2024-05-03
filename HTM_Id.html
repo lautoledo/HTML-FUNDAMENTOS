@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML ID</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+        <h2>Atributo de identificação HTML</h2>
+        <p>O atributo HTML id é usado para especificar um ID exclusivo para um elemento HTML.</p>
+
+        <p>Você não pode ter mais de um elemento com o mesmo id em um documento HTML.</p>
+
+        <h3>Usando o atributo id</h3>
+        <p>O atributo id especifica um ID exclusivo para um elemento HTML. O valor do id atributo deve ser exclusivo no documento HTML.</p>
+
+        <p>O id atributo é usado para apontar para uma declaração de estilo específica em uma folha de estilos. Também é usado por JavaScript para acessar e manipular o elemento com o id específico.</p>
+
+        <p>A sintaxe para id é: escreva um caractere hash (#), seguido por um nome de id. Em seguida, defina as propriedades CSS entre chaves {}.</p>
+
+        <p>No exemplo a seguir temos um <code>&lt;h1&gt;</code> elemento que aponta para o nome do id “myHeader”. Este <code>&lt;h1&gt;</code> elemento será estilizado de acordo com a #myHeader definição de estilo na seção head:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                #myHeader {<br>
+                &nbsp;&nbsp;background-color: lightblue;<br>
+                &nbsp;&nbsp;color: black;<br>
+                &nbsp;&nbsp;padding: 40px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br><br>
+
+                &lt;h1 id="myHeader"&gt;My Header&lt;/h1&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+        <p><mark>Nota: O nome do ID diferencia maiúsculas de minúsculas!</mark></p>
+        <p><mark>Nota: O nome do id deve conter pelo menos um caractere, não pode começar com um número e não deve conter espaços em branco (espaços, tabulações, etc.).</mark></p>
+
+        <h3>Diferença entre classe e ID</h3>
+        <p>Um nome de classe pode ser usado por vários elementos HTML, enquanto um nome de id deve ser usado apenas por um elemento HTML dentro da página:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                /* Estilize o elemento com o id "myHeader" */<br>
+                #myHeader {<br>
+                &nbsp;&nbsp;background-color: lightblue;<br>
+                &nbsp;&nbsp;color: black;<br>
+                &nbsp;&nbsp;padding: 40px;<br>
+                &nbsp;&nbsp;text-align: center;<br>
+                }<br><br>
+
+                /* Estilize todos os elementos com o nome da classe "city" */<br>
+                .city {<br>
+                &nbsp;&nbsp;background-color: tomato;<br>
+                &nbsp;&nbsp;color: white;<br>
+                &nbsp;&nbsp;padding: 10px;<br>
+                }<br>
+                &lt;/style&gt;<br><br>
+
+                &lt;!-- Um elemento com um id exclusivo --&gt;<br>
+                &lt;h1 id="myHeader"&gt;My Cities&lt;/h1&gt;<br><br>
+
+                &lt;!-- Múltiplos elementos com a mesma classe --&gt;<br>
+                &lt;h2 class="city"&gt;London&lt;/h2&gt;<br>
+                &lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
+
+                &lt;h2 class="city"&gt;Paris&lt;/h2&gt;<br>
+                &lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>
+
+                &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;<br>
+                &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+            </code>
+        </div>
+
+        <h3>Marcadores HTML com ID e links</h3>
+        <p>Os marcadores HTML são usados ​​para permitir que os leitores acessem partes específicas de uma página da web.</p>
+
+        <p>Os marcadores podem ser úteis se a sua página for muito longa.</p>
+
+        <p>Para usar um marcador, você deve primeiro criá-lo e depois adicionar um link a ele.</p>
+
+        <p>Então, quando o link for clicado, a página rolará até o local com o marcador.</p>
+
+        <p>Exemplo</p>
+
+        <p>Primeiro, crie um marcador com o id atributo:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;h2 id="C4"&gt;Chapter 4&lt;/h2&gt;
+            </code>
+        </div>
+
+        <p>Em seguida, adicione um link para o marcador ("Pular para o Capítulo 4"), na mesma página:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;a href="#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+            </code>
+        </div>
+
+        <p>Ou adicione um link ao marcador ("Pular para o Capítulo 4"), de outra página:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;a href="html_demo.html#C4"&gt;Jump to Chapter 4&lt;/a&gt;
+            </code>
+        </div>
+
+</div>
+<!--CONTEÚDO DA PÁGINA-->
+
+<footer>
+  <p>&copy; 2024 Seu Website. Todos os direitos reservados. Design por Você.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

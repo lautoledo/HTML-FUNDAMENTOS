@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Quotations</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+  <H2>Cotação HTML e elementos de citação</H2>
+        <h3>Neste capítulo, examinaremos os elementos &lt;blockquote&gt;, &lt;q&gt;, &lt;abbr&gt;, &lt;address&gt;, &lt;cite&gt; e &lt;bdo&gt; HTML.</h3>
+
+        <p>Exemplo</p>
+        <blockquote cite="http://www.worldwildlife.org/who/index.html">
+            Here is a quote from WWF's website:
+            For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+        </blockquote>
+    
+
+<h2>HTML &lt;blockquote&gt; para cotações</h2>
+<p>O elemento HTML &lt;blockquote&gt; define uma seção citada de outra fonte.</p>
+<p>Os navegadores geralmente recuam &lt;blockquote&gt; elementos.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;p>Here is a quote from WWF's website:&lt;/p&gt;
+
+    &lt;blockquote cite="http://www.worldwildlife.org/who/index.html"&gt;
+
+    WWF has worked to help people and nature thrive. As the world's leading conservation For 60 years, 
+    organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world
+    to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they 
+    live.
+
+    &lt;/blockquote&gt;
+    </pre></code>
+</div>
+
+<p>Confira:</p>
+<p>Here is a quote from WWF's website:</p>
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+    For 60 years, WWF has worked to help people and nature thrive. As the world's leading conservation organization, WWF works in nearly 100 countries. At every level, we collaborate with people around the world to develop and deliver innovative solutions that protect communities, wildlife, and the places in which they live.
+</blockquote>
+
+<h2>HTML &lt;q&gt; para citações curtas</h2>
+<p>A tag HTML &lt;q&gt; define uma citação curta.</p>
+<p>Os navegadores normalmente inserem aspas ao redor da citação.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;p&gt;WWF's goal is to: &lt;q&gt;Build a future where people live in harmony with nature.&lt;/q&gt;&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Confira;</p>
+<p>WWF's goal is to: <q>Build a future where people live in harmony with nature.</q></p>
+
+
+
+
+
+<h2>HTML &lt;abbr&gt; para abreviações</h2>
+<p>A tag HTML &lt;abbr&gt; define uma abreviatura ou um acrônimo, como "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".</p>
+<p>A marcação de abreviaturas pode fornecer informações úteis aos navegadores, sistemas de tradução e motores de busca.</p>
+<p>Dica: Use o atributo global title para mostrar a descrição da abreviatura/acrônimo ao passar o mouse sobre o elemento.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;p&gt;The &lt;abbr title="World Health Organization"&gt;WHO&lt;/abbr&gt; was founded in 1948.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Exemplo</p>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+<h2>HTML &lt;address&gt; para informações de contato</h2>
+<p>A tag HTML &lt;address&gt; define as informações de contato do autor/proprietário de um documento ou artigo.</p>
+<p>As informações de contato podem ser endereço de e-mail, URL, endereço físico, número de telefone, identificador de mídia social, etc.</p>
+<p>O texto no &lt;address&gt; elemento geralmente é renderizado em itálico e os navegadores sempre adicionam uma quebra de linha antes e depois do &lt;address&gt; elemento.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;address&gt;
+    Written by John Doe.&lt;br&gt;
+    Visit us at:&lt;br&gt;
+    Example.com&lt;br&gt;
+    Box 564, Disneyland&lt;br&gt;
+    USA
+    &lt;/address&gt;
+    </pre></code>
+</div>
+
+<p>Confira:</p>
+<address>
+    Written by John Doe.<br>
+    Visit us at:<br>
+    Example.com<br>
+    Box 564, Disneyland<br>
+    USA
+</address>
+
+<h2>HTML &lt;cite&gt; para título do trabalho</h2>
+<p>A &lt;cite&gt; tag HTML define o título de um trabalho criativo (por exemplo, um livro, um poema, uma música, um filme, uma pintura, uma escultura, etc.).</p>
+<p>Nota: O nome de uma pessoa não é o título de uma obra.</p>
+<p>O texto no &lt;cite&gt; elemento geralmente é renderizado em itálico.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;p&gt;&lt;cite&gt;The Scream&lt;/cite&gt; by Edvard Munch. Painted in 1893.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Confira:</p>
+<p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>
+
+<h2>HTML &lt;bdo&gt; para substituição bidirecional</h2>
+<p>BDO significa Substituição bidirecional.</p>
+<p>A tag HTML &lt;bdo&gt; é usada para substituir a direção atual do texto:</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+    &lt;bdo dir="rtl"&gt;This text will be written from right to left&lt;/bdo&gt;
+    </pre></code>
+</div>
+
+<p>Exemplo</p>
+<bdo dir="rtl">This text will be written from right to left</bdo>
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+</body>
+</html>

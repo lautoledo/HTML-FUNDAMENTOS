@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Formatting</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+
+        <h2>Formatação de texto HTML</h2>
+        <h3>HTML contém vários elementos para definir texto com um significado especial.</h3>
+        
+        <p>Exemplo</p>
+        <p>This text is <b>bold</b></p>
+        
+        <p>This text is <i>italic</i></p>
+        
+        <p>This is <sub>subscript</sub> and <sup>superscript</sup></p>
+    
+
+<h2>Elementos de formatação HTML</h2>
+<p>Os elementos de formatação foram projetados para exibir tipos especiais de texto:</p>
+
+<div class="code-container">
+    <code><pre>
+        &lt;b&gt; - Texto em negrito
+        &lt;strong&gt; - Texto importante
+        &lt;i&gt; - Texto em itálico
+        &lt;em&gt; - Texto enfatizado
+        &lt;mark&gt; - Texto marcado
+        &lt;small&gt; - Texto menor
+        &lt;del&gt; - Texto excluído
+        &lt;ins&gt; - Texto inserido
+        &lt;sub&gt; - Texto subscrito
+        &lt;sup&gt; - Texto sobrescrito
+    </pre></code>
+</div>
+
+<h3>Elementos HTML &lt;b&gt; e &lt;strong&gt;</h3>
+<p>O  &lt;b&gt;elemento HTML define texto em negrito, sem qualquer importância extra.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+        &lt;p&gt;This text is &lt;b>bold/b&gt; &lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>O elemento HTML  &lt;strong&gt;define texto com grande importância. O conteúdo interno normalmente é exibido em negrito.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+        &lt;p&gt;This text is  &lt;strong&gt;important! &lt;/strong&gt; &lt;/p&gt;
+    </pre></code>
+</div>
+
+<h3>Elementos HTML &lt;i&gt; e &lt;em&gt;</h3>
+<p>O  &lt;i&gt; elemento HTML define uma parte do texto com uma voz ou humor alternativo. O conteúdo interno normalmente é exibido em itálico.</p>
+
+<p>Dica: A  &lt;i&gt; tag costuma ser usada para indicar um termo técnico, uma frase de outro idioma, um pensamento, o nome de um navio, etc.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+        &lt;p&gt;This text is &lt;i&gt;italic &lt;/i&gt; &lt;/p&gt;
+</pre></code>
+</div>
+
+<p>Confira:</p>
+<p>This text is <i>italic</i></p>
+
+<p>O elemento HTML  &lt;em&gt; define o texto enfatizado. O conteúdo interno normalmente é exibido em itálico.</p>
+
+<p>Dica: um leitor de tela pronunciará as palavras &lt;em&gt; com ênfase, usando ênfase verbal.</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+        &lt;p&gt;This text is &lt;em&gt;emphasized&lt;/em&gt;&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Confira:</p>
+<p>This text is <em>emphasized</em></p>
+
+<h3>Elemento HTML &lt;small&gt;</h3>
+<p>O elemento HTML &lt;small&gt; define um texto menor:</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+&lt;p&gt;This is some &lt;small&gt;smaller text&lt;/small&gt;.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Confira</p>
+<p>This is some <small>smaller text</small>.</p>
+
+<h3>Elemento HTML &lt;mark&gt;</h3>
+<p>O elemento HTML <mark>define o texto que deve ser marcado ou destacado:</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+&lt;p&gt;Do not forget to buy &lt;mark&gt;milk&lt;/mark&gt; today.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Exemplo</p>
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+<h3>Elemento HTML &lt;del&gt;</h3>
+<p>O elemento HTML &lt;del>&gt; define o texto que foi excluído de um documento. Os navegadores geralmente traçam uma linha no texto excluído:</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; red.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Confira:</p>
+<p>My favorite color is <del>blue</del> red.</p>
+
+<h3>Elemento HTML &lt;ins&gt;</h3>
+<p>O elemento HTML &lt;ins&gt;define um texto que foi inserido em um documento. Os navegadores geralmente sublinharão o texto inserido:</p>
+
+<p>Exemplo</p>
+<div class="code-container">
+    <code><pre>
+&lt;p&gt;My favorite color is &lt;del&gt;blue&lt;/del&gt; &lt;ins&gt;red&lt;/ins&gt;.&lt;/p&gt;
+    </pre></code>
+</div>
+
+<p>Exemplo</p>
+<p>My favorite color is <del>blue</del> <ins>red</ins>.</p>
+
+<h3>Elemento HTML &lt;sub&gt;</h3>
+<p>O elemento HTML <sub>define o texto subscrito. O texto subscrito aparece meio caractere abaixo da linha normal e às vezes é renderizado em uma fonte menor. O texto subscrito pode ser usado para fórmulas químicas, como H<sub>2</sub>O:</p>
+
+<p>Exemplo</p>
+<p>This is <sub>subscripted</sub> text.</p>
+
+<h3>Elemento HTML &lt;sup&gt;</h3>
+<p>O elemento HTML <sup>define texto sobrescrito. O texto sobrescrito aparece meio caractere acima da linha normal e às vezes é renderizado em uma fonte menor. Texto sobrescrito pode ser usado para notas de rodapé, como WWW<sup>[1]</sup>:</p>
+
+<p>Exemplo</p>
+<p>This is <sup>superscripted</sup> text.</p>
+
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+</body>
+</html>

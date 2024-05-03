@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Block & Inline</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+      <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+      <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+      <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+    </ul>
+</nav>
+
+<!-- CONTEÚDO DA PÁGINA -->
+<div class="content">
+  <h2>Blocos HTML e Elementos Embutidos</h2>
+  <p>Cada elemento HTML tem um valor de exibição padrão, que pode ser de bloco ou embutido.</p>
+  
+  <h3>Elementos em Nível de Bloco</h3>
+  <p>Os elementos em nível de bloco sempre começam em uma nova linha e geralmente têm alguma margem ao seu redor.</p>
+  
+  <p>O elemento de parágrafo &lt;p&gt; e o elemento de divisão &lt;div&gt; são exemplos de elementos em nível de bloco.</p>
+  
+  <h4>Exemplo</h4>
+  <div class="code-container">
+    <code><pre>
+      &lt;p&gt;Hello World&lt;/p&gt;
+      &lt;div&gt;Hello World&lt;/div&gt;
+    </pre></code>
+  </div>
+  
+  <p>Aqui estão alguns elementos de bloco comuns em HTML:</p>
+  <ul>
+    <li>&lt;address&gt;</li>
+    <li>&lt;article&gt;</li>
+    <li>&lt;aside&gt;</li>
+    <li>&lt;blockquote&gt;</li>
+    <li>&lt;div&gt;</li>
+    <li>&lt;dl&gt;</li>
+    <li>&lt;dt&gt;</li>
+    <li>&lt;fieldset&gt;</li>
+    <li>&lt;figcaption&gt;</li>
+    <li>&lt;figure&gt;</li>
+    <li>&lt;footer&gt;</li>
+    <li>&lt;form&gt;</li>
+    <li>&lt;h1&gt; - &lt;h6&gt;</li>
+    <li>&lt;header&gt;</li>
+    <li>&lt;hr&gt;</li>
+    <li>&lt;li&gt;</li>
+    <li>&lt;main&gt;</li>
+    <li>&lt;nav&gt;</li>
+    <li>&lt;noscript&gt;</li>
+    <li>&lt;ol&gt;</li>
+    <li>&lt;p&gt;</li>
+    <li>&lt;pre&gt;</li>
+    <li>&lt;section&gt;</li>
+    <li>&lt;table&gt;</li>
+    <li>&lt;tfoot&gt;</li>
+    <li>&lt;ul&gt;</li>
+    <li>&lt;video&gt;</li>
+  </ul>
+  
+  <h3>Elementos Embutidos</h3>
+  <p>Os elementos embutidos não começam em uma nova linha e ocupam apenas a largura necessária.</p>
+  
+  <p>Um exemplo de elemento embutido é o elemento &lt;span&gt;, que pode ser usado para marcar parte do texto.</p>
+  
+  <h4>Exemplo</h4>
+  <div class="code-container">
+    <code><pre>
+      &lt;p&gt;Este é um texto com uma &lt;span&gt;parte destacada&lt;/span&gt;.&lt;/p&gt;
+    </pre></code>
+  </div>
+  
+  <p>Aqui estão alguns elementos embutidos em HTML:</p>
+
+  
+  <ul>
+    <li>&lt;a&gt;</li>
+    <li>&lt;abbr&gt;</li>
+    <li>&lt;acronym&gt;</li>
+    <li>&lt;b&gt;</li>
+    <li>&lt;bdo&gt;</li>
+    <li>&lt;big&gt;</li>
+    <li>&lt;br&gt;</li>
+    <li>&lt;button&gt;</li>
+    <li>&lt;cite&gt;</li>
+    <li>&lt;code&gt;</li>
+    <li>&lt;dfn&gt;</li>
+    <li>&lt;em&gt;</li>
+    <li>&lt;i&gt;</li>
+    <li>&lt;img&gt;</li>
+    <li>&lt;input&gt;</li>
+    <li>&lt;kbd&gt;</li>
+    <li>&lt;label&gt;</li>
+    <li>&lt;map&gt;</li>
+    <li>&lt;object&gt;</li>
+    <li>&lt;q&gt;</li>
+    <li>&lt;samp&gt;</li>
+    <li>&lt;script&gt;</li>
+    <li>&lt;select&gt;</li>
+    <li>&lt;small&gt;</li>
+    <li>&lt;span&gt;</li>
+    <li>&lt;strong&gt;</li>
+    <li>&lt;sub&gt;</li>
+    <li>&lt;sup&gt;</li>
+    <li>&lt;textarea&gt;</li>
+    <li>&lt;time&gt;</li>
+    <li>&lt;tt&gt;</li>
+    <li>&lt;var&gt;</li>
+  </ul>
+  
+
+
+  <p><mark>Nota: Um elemento inline não pode conter um elemento de nível de bloco!</mark></p>
+  
+  <h3>O Elemento &lt;div&gt;</h3>
+  <p>O elemento &lt;div&gt; é frequentemente usado como um contêiner para outros elementos HTML. Ele não possui significado próprio, mas é usado para agrupar elementos e aplicar estilos.</p>
+  
+  <h4>Exemplo</h4>
+  <div class="code-container">
+    <code><pre>
+      &lt;div style="background-color:black;color:white;padding:20px;"&gt;
+        &lt;h2&gt;Londres&lt;/h2&gt;
+        &lt;p&gt;Londres é a capital da Inglaterra. É a cidade mais populosa do Reino Unido, com uma área metropolitana de mais de 13 milhões de habitantes.&lt;/p&gt;
+      &lt;/div&gt;
+    </pre></code>
+  </div>
+
+  <h4>Confira:</h4>
+  <div style="background-color:black;color:white;padding:20px;">
+    <h2>London</h2>
+    <p>London is the capital city of England. It is the most populous city in the United Kingdom, with a metropolitan area of over 13 million inhabitants.</p>
+    <p>Standing on the River Thames, London has been a major settlement for two millennia, its history going back to its founding by the Romans, who named it Londinium.</p>
+  </div> 
+  
+  
+  <h3>O Elemento &lt;span&gt;</h3>
+  <p>O elemento &lt;span&gt; é usado para marcar uma parte do texto ou documento e aplicar estilos a essa parte.</p>
+  
+  <h4>Exemplo</h4>
+  <div class="code-container">
+    <code><pre>
+      &lt;p&gt;Minha mãe tem olhos &lt;span style="color:blue;font-weight:bold;"&gt;azuis&lt;/span&gt; e meu pai tem olhos &lt;span style="color:darkolivegreen;font-weight:bold;"&gt;verdes escuros&lt;/span&gt;.&lt;/p&gt;
+    </pre></code>
+  </div>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

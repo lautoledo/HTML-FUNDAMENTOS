@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Iframes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+        <h2>Iframes HTML</h2>
+        <p>Um iframe HTML é usado para exibir uma página da web dentro de uma página da web.</p>
+
+        <iframe src="https://pt.wikipedia.org/wiki/HTML5" height="400" width="800" title="Iframe Example"></iframe>
+
+        <h3>Sintaxe HTML Iframe</h3>
+        <p>A tag HTML <code>&lt;iframe&gt;</code> especifica um quadro embutido.</p>
+
+        <p>Um quadro embutido é usado para incorporar outro documento no documento HTML atual.</p>
+
+        <h4>Sintaxe</h4>
+        <div class="code-container">
+            <code>
+                &lt;iframe src="url" title="description"&gt;&lt;/iframe&gt;
+            </code>
+        </div>
+
+        <p>Dica: É uma boa prática sempre incluir um <code>title</code> atributo para o arquivo <code>&lt;iframe&gt;</code>. Isso é usado por leitores de tela para ler qual é o conteúdo do iframe.</p>
+
+        <h3>Iframe - Definir Altura e Largura</h3>
+        <p>Use os atributos <code>height</code> e <code>width</code> para especificar o tamanho do iframe.</p>
+
+        <p>A altura e a largura são especificadas em pixels por padrão:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;iframe src="demo_iframe.htm" height="200" width="300" title="Iframe Example"&gt;&lt;/iframe&gt;
+            </code>
+        </div>
+
+        <p>Ou você pode adicionar o <code>style</code> atributo e usar o CSS <code>height</code> e <code>width</code> as propriedades:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;iframe src="demo_iframe.htm" style="height:200px;width:300px;" title="Iframe Example"&gt;&lt;/iframe&gt;
+            </code>
+        </div>
+
+        <h3>Iframe - Remover a borda</h3>
+        <p>Por padrão, um iframe possui uma borda ao seu redor.</p>
+
+        <p>Para remover a borda, adicione o <code>style</code> atributo e use a <code>border</code> propriedade CSS:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;iframe src="demo_iframe.htm" style="border:none;" title="Iframe Example"&gt;&lt;/iframe&gt;
+            </code>
+        </div>
+
+        <p>Com CSS, você também pode alterar o tamanho, estilo e cor da borda do iframe:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;iframe src="demo_iframe.htm" style="border:2px solid red;" title="Iframe Example"&gt;&lt;/iframe&gt;
+            </code>
+        </div>
+
+        <h3>Iframe - Alvo para um Link</h3>
+        <p>Um iframe pode ser usado como quadro de destino para um link.</p>
+
+        <p>O <code>target</code> atributo do link deve referir-se ao <code>name</code> atributo do iframe:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;iframe src="demo_iframe.htm" name="iframe_a" title="Iframe Example"&gt;&lt;/iframe&gt;<br><br>
+
+                &lt;p&gt;&lt;a href="https://www.w3schools.com" target="iframe_a"&gt;W3Schools.com&lt;/a&gt;&lt;/p&gt;
+            </code>
+        </div>
+
+</div>
+<!--CONTEÚDO DA PÁGINA-->
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

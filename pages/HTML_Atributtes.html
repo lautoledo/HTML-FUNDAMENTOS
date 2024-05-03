@@ -30,8 +30,6 @@
 <!--CONTEÚDO DA PÁGINA-->
 <div class="content">
 
-
-
 <h2>Atributos HTML</h2>
 <p>Os atributos HTML fornecem informações adicionais sobre os elementos HTML.</p>
 <p>Todos os elementos HTML podem ter atributos.</p>
@@ -43,14 +41,23 @@
 <p>A &lt;a&gt; tag define um hiperlink. O href atributo especifica o URL da página para a qual o link leva:</p>
 
 <p>Exemplo</p>
-<p><code>&lt;a href="https://www.w3schools.com"&gt;Visit W3Schools&lt;/a&gt;</code></p>
+<p><code>&lt;a href="https://github.com/lautoledo/HTML-FUNDAMENTOS"&gt;Visit GitHub&lt;/a&gt;</code></p>
 <p>Você aprenderá mais sobre links em nosso capítulo <em>Links HTML</em>.</p>
 
 <h3>O atributo src</h3>
 <p>A &lt;img&gt; tag é usada para incorporar uma imagem em uma página HTML. O src atributo especifica o caminho para a imagem a ser exibida:</p>
 
 <p>Exemplo</p>
+<div class="code-container" style="align-items: center;">
 <p><code>&lt;img src="img_girl.jpg"&gt;</code></p>
+</div>
+
+<div class="implemented-html">
+    <!--Implemented HTML here -->
+
+    <img src="/img/logoHTML.png" alt="imagem de exemplo">
+</div>
+
 <p>Existem duas maneiras de especificar o URL no src atributo:</p>
 
 <ol>
@@ -64,18 +71,26 @@
 <p>A &lt;img&gt; tag também deve conter os atributos <em>width</em> e <em>height</em>, que especificam a largura e a altura da imagem (em pixels):</p>
 
 <p>Exemplo</p>
+<div class="code-container" style="align-items: center;">
 <p><code>&lt;img src="img_girl.jpg" width="500" height="600"&gt;</code></p>
+</div>
 
 <h3>O atributo alternativo</h3>
 <p>O atributo obrigatório para a &lt;img&gt; tag especifica um texto alternativo para uma imagem, se a imagem por algum motivo não puder ser exibida. Isso pode ser devido a uma conexão lenta, a um erro no src atributo ou ao usuário usar um leitor de tela.</p>
 
 <p>Exemplo</p>
+<div class="code-container" style="align-items: center;">
 <p><code>&lt;img src="img_girl.jpg" alt="Girl with a jacket"&gt;</code></p>
+</div>
+
 <p>Exemplo</p>
 <p>Veja o que acontece se tentarmos exibir uma imagem que não existe:</p>
 
+<div class="code-container" style="align-items: center;">
 <p><code>&lt;img src="img_typo.jpg" alt="Girl with a jacket"&gt;</code></p>
+</div>
 <p>Você aprenderá mais sobre imagens em nosso capítulo <em>Imagens HTML</em>.</p>
+
 
 <h3>O atributo de estilo</h3>
 <p>O <em>style</em> atributo é usado para adicionar estilos a um elemento, como cor, fonte, tamanho e muito mais.</p>
@@ -89,6 +104,8 @@
 
 <p>O exemplo a seguir especifica o inglês como idioma:</p>
 
+<div class="code-container" style="align-items: center;">
+
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en"&gt;
 &lt;body&gt;
@@ -96,9 +113,13 @@
 &lt;/body&gt;
 &lt;/html&gt;</pre>
 
+</div>
+
 <p>Os códigos de país também podem ser adicionados ao código do idioma no <em>lang</em> atributo. Assim, os dois primeiros caracteres definem o idioma da página HTML e os dois últimos caracteres definem o país.</p>
 
 <p>O exemplo a seguir especifica inglês como idioma e Estados Unidos como país:</p>
+
+<div class="code-container" style="align-items: center;">
 
 <pre>&lt;!DOCTYPE html&gt;
 &lt;html lang="en-US"&gt;
@@ -106,6 +127,7 @@
 ...
 &lt;/body&gt;
 &lt;/html&gt;</pre>
+</div>
 
 <p>Você pode ver todos os códigos de idioma em nossa <a href="https://www.w3schools.com/tags/ref_language_codes.asp">Referência de código de idioma HTML</a>.</p>
 
@@ -115,7 +137,10 @@
 <p>O valor do atributo <em>title</em> será exibido como uma dica de ferramenta quando você passar o mouse sobre o elemento:</p>
 
 <p>Exemplo</p>
+<div class="code-container" style="align-items: center;">
 <p><code>&lt;p title="I'm a tooltip"&gt;This is a paragraph.&lt;/p&gt;</code></p>
+</div>
+
 <p>Sugerimos: sempre use atributos em minúsculas</p>
 <p>O padrão HTML não exige nomes de atributos em letras minúsculas.</p>
 

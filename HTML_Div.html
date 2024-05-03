@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Div</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+
+        <h2>Elemento HTML Div</h2>
+        <p>O elemento &lt;div&gt; é utilizado como contêiner para outros elementos HTML.</p>
+        
+        <h3>O elemento &lt;div&gt;</h3>
+        <p>O elemento &lt;div&gt; é, por padrão, um elemento de bloco, o que significa que ocupa toda a largura disponível e vem com quebras de linha antes e depois.</p>
+        
+        <p>Exemplo</p>
+        <p>Um elemento &lt;div&gt; ocupa toda a largura disponível:</p>
+        
+        <div class="code-container">
+            <code>&lt;p&gt;Lorem Ipsum &lt;div&gt;I am a div&lt;/div&gt; dolor sit amet.&lt;/p&gt;</code>
+        </div>
+        
+        <p>Resultado:</p>
+        <p>Lorem Ipsum</p>
+    <div class="exemplo1">
+        <p>Eu sou um div</p>
+    </div>
+        <p>dor sit amet.</p>
+        
+
+        <p>O elemento &lt;div&gt; não possui atributos obrigatórios, mas <code>style</code>, <code>class</code> e <code>id</code> são comuns.</p>
+
+        <h3>&lt;div&gt; como um contêiner</h3>
+        <p>O elemento &lt;div&gt; é frequentemente usado para agrupar seções de uma página da web.</p>
+
+        <p>Exemplo</p>
+        <p>Um elemento &lt;div&gt; com elementos HTML:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;London&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                &lt;/div&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+    <div class="exemplo2">
+        <p>Londres</p>
+        <p>Londres é a capital da Inglaterra.</p>
+        <p>Londres tem mais de 13 milhões de habitantes.</p>
+    </div>
+
+        <h3>Alinhar ao centro um elemento &lt;div&gt;</h3>
+        <p>Se você tiver um elemento &lt;div&gt; que não tenha 100% de largura e quiser alinhá-lo centralmente, defina a propriedade CSS <code>margin</code> como <code>auto</code>.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                div {<br>
+                &nbsp;&nbsp;width:300px;<br>
+                &nbsp;&nbsp;margin:auto;<br>
+                }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+    <div class="exemplo3">
+        <p>Londres</p>
+        <p>Londres é a capital da Inglaterra.</p>
+        <p>Londres tem mais de 13 milhões de habitantes.</p>
+    </div>
+
+        <h3>Vários elementos &lt;div&gt;</h3>
+        <p>Você pode ter muitos contêineres &lt;div&gt; na mesma página.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;London&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;London is the capital city of England.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;London has over 13 million inhabitants.&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Oslo&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Oslo is the capital city of Norway.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Oslo has over 600.000 inhabitants.&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+
+                &lt;div&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Rome&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Rome is the capital city of Italy.&lt;/p&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Rome has almost 3 million inhabitants.&lt;/p&gt;<br>
+                &lt;/div&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+        <div class="exemplo4">
+            <h2>London</h2>
+            <p>London is the capital city of England.</p>
+            <p>London has over 13 million inhabitants.</p>
+          </div>
+          
+          <div class="exemplo5">
+            <h2>Oslo</h2>
+            <p>Oslo is the capital city of Norway.</p>
+            <p>Oslo has over 600.000 inhabitants.</p>
+          </div>
+          
+          <div class="exemplo6">
+            <h2>Rome</h2>
+            <p>Rome is the capital city of Italy.</p>
+            <p>Rome has almost 3 million inhabitants.</p>
+          </div>
+
+        <h3>Alinhando elementos &lt;div&gt; lado a lado</h3>
+        <p>Ao construir páginas da web, muitas vezes você deseja ter dois ou mais elementos &lt;div&gt; lado a lado.</p>
+        <p>Existem diferentes métodos para alinhar elementos lado a lado, todos incluem alguns estilos CSS. Veremos os métodos mais comuns:</p>
+
+        <h4>Flutuador</h4>
+        <p>A propriedade CSS <code>float</code> é usada para posicionar e formatar conteúdo e permite que os elementos flutuem próximos uns dos outros em vez de uns sobre os outros.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                .mycontainer {<br>
+                &nbsp;&nbsp;width:100%;<br>
+                &nbsp;&nbsp;overflow:auto;<br>
+                }<br>
+                .mycontainer div {<br>
+                &nbsp;&nbsp;width:33%;<br>
+                &nbsp;&nbsp;float:left;<br>
+                }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+        <style>
+            div.mycontainer {
+              width:100%;
+              overflow:auto;
+            }
+            div.mycontainer div {
+              width:33%;  
+              float:left;
+            }
+            </style>
+            <body>
+            
+            <div class="mycontainer">
+            
+              <div style="background-color:#FFF4A3;">
+                <h2>London</h2>
+                <p>London is the capital city of England.</p>
+                <p>London has over 13 million inhabitants.</p>
+              </div>
+              
+              <div style="background-color:#FFC0C7;">
+                <h2>Oslo</h2>
+                <p>Oslo is the capital city of Norway.</p>
+                <p>Oslo has over 600.000 inhabitants.</p>
+              </div>
+              
+              <div style="background-color:#D9EEE1;">
+                <h2>Rome</h2>
+                <p>Rome is the capital city of Italy.</p>
+                <p>Rome has almost 3 million inhabitants.</p>
+              </div>
+            
+            </div>
+
+        <h4>Bloco embutido</h4>
+        <p>Se você alterar a propriedade <code>&lt;div&gt;</code> do elemento de <code>block</code> para <code>inline-block</code>, os elementos não adicionarão mais uma quebra de linha antes e depois e serão exibidos lado a lado em vez de um em cima do outro.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                div {<br>
+                &nbsp;&nbsp;width: 30%;<br>
+                &nbsp;&nbsp;display: inline-block;<br>
+                }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+        
+            
+            <div class="exemplo7" style="background-color:#FFF4A3;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div class="exemplo7" style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div class="exemplo7" style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+
+        <h4>Flexível</h4>
+        <p>O CSS Flexbox Layout Module foi introduzido para facilitar o design de uma estrutura de layout responsiva e flexível sem usar float ou posicionamento.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                .mycontainer {<br>
+                &nbsp;&nbsp;display: flex;<br>
+                }<br>
+                .mycontainer &gt; div {<br>
+                &nbsp;&nbsp;width:33%;<br>
+                }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+        <div class="mycontainer2">
+
+            <div style="background-color:#FFF4A3;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million.</p>
+            </div>
+          
+          </div>
+
+        <h4>Grade</h4>
+        <p>O Módulo CSS Grid Layout oferece um sistema de layout baseado em grade, com linhas e colunas, facilitando o design de páginas web sem a necessidade de usar flutuadores e posicionamento.</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                .grid-container {<br>
+                &nbsp;&nbsp;display: grid;<br>
+                &nbsp;&nbsp;grid-template-columns: 33% 33% 33%;<br>
+                }<br>
+                &lt;/style&gt;
+            </code>
+        </div>
+
+        <p>Resultado:</p>
+        <div class="grid-container">
+
+            <div style="background-color:#FFF4A3;">
+              <h2>London</h2>
+              <p>London is the capital city of England.</p>
+              <p>London has over 13 million inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#FFC0C7;">
+              <h2>Oslo</h2>
+              <p>Oslo is the capital city of Norway.</p>
+              <p>Oslo has over 600.000 inhabitants.</p>
+            </div>
+            
+            <div style="background-color:#D9EEE1;">
+              <h2>Rome</h2>
+              <p>Rome is the capital city of Italy.</p>
+              <p>Rome has almost 3 million inhabitants.</p>
+            </div>
+            
+            </div>
+        
+
+</div>
+
+
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

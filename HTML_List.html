@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+      <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+      <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+      <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+  <h2>Listas HTML</h2>
+  <p>As listas HTML são utilizadas para agrupar elementos relacionados.</p>
+  
+  <h3>Exemplo de Lista Não Ordenada</h3>
+  <p>Uma lista HTML não ordenada é criada com a tag &lt;ul&gt;. Cada item da lista é definido com a tag &lt;li&gt;.</p>
+
+  <p>Exemplo:</p>
+  <div class="code-container">
+    <code><pre>
+      &lt;ul&gt;
+        &lt;li&gt;Café&lt;/li&gt;
+        &lt;li&gt;Chá&lt;/li&gt;
+        &lt;li&gt;Leite&lt;/li&gt;
+        &lt;li&gt;Suco&lt;/li&gt;
+      &lt;/ul&gt;
+    </pre></code>
+  </div>
+  
+  <p>Confira:</p>
+  <ul>
+    <li>Café</li>
+    <li>Chá</li>
+    <li>Leite</li>
+    <li>Suco</li>
+  </ul>
+  
+  <h3>Exemplo de Lista Ordenada</h3>
+  <p>Uma lista HTML ordenada é criada com a tag &lt;ol&gt;. Cada item da lista também é definido com a tag &lt;li&gt;.</p>
+  
+  <p>Exemplo:</p>
+  <div class="code-container">
+    <code><pre>
+      &lt;ol&gt;
+        &lt;li&gt;Café&lt;/li&gt;
+        &lt;li&gt;Chá&lt;/li&gt;
+        &lt;li&gt;Leite&lt;/li&gt;
+        &lt;li&gt;Suco&lt;/li&gt;
+      &lt;/ol&gt;
+    </pre></code>
+  </div>
+
+  <p>Confira:</p>
+  <ol>
+    <li>Café</li>
+    <li>Chá</li>
+    <li>Leite</li>
+    <li>Suco</li>
+  </ol>
+  
+  <h3>Lista de Descrição HTML</h3>
+  <p>Além das listas não ordenadas e ordenadas, o HTML suporta listas de descrição.</p>
+  
+  <p>Uma lista de descrição é criada com a tag &lt;dl&gt;. Cada termo é definido com a tag &lt;dt&gt;, e cada descrição é definida com a tag &lt;dd&gt;.</p>
+  
+  <p>Exemplo:</p>
+  <div class="code-container">
+    <code><pre>
+      &lt;dl&gt;
+        &lt;dt&gt;Café&lt;/dt&gt;
+        &lt;dd&gt;- bebida quente e escura&lt;/dd&gt;
+        &lt;dt&gt;Leite&lt;/dt&gt;
+        &lt;dd&gt;- bebida branca e fria&lt;/dd&gt;
+      &lt;/dl&gt;
+    </pre></code>
+  </div>
+
+  <p>Confira:</p>
+  <dl>
+    <dt>Café</dt>
+    <dd>- bebida quente e escura</dd>
+    <dt>Leite</dt>
+    <dd>- bebida branca e fria</dd>
+  </dl>
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+
+</body>
+</html>

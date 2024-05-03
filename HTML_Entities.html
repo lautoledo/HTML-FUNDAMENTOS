@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Entities</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h1>Entidades HTML</h1>
+
+  <p>Caracteres reservados em HTML devem ser substituídos por entidades:</p>
+  <div class="code-container">
+  <ul>
+    <li>&lt; (menos que) = &lt;</li>
+    <li>&gt; (maior que) = &gt;</li>
+  </ul>
+</div>
+  <h2>Entidades de caracteres HTML</h2>
+  
+  <p>Alguns caracteres são reservados em HTML. Se você usar os sinais de menor que (&lt;) ou maior que (&gt;) em seu texto HTML, o navegador poderá misturá-los com tags.</p>
+  
+  <p>Nomes ou números de entidades podem ser usados ​​para exibir caracteres HTML reservados. Os nomes das entidades são assim:
+     <div class="code-container"> &amp;&entity_name;</div> Os números das entidades são assim: <div class="code-container">&amp;$#entity_number;</div> Para exibir um sinal de menor que (&lt;) devemos escrever: &amp;lt; ou &amp;#60;</p>
+  
+  <p>Os nomes das entidades são mais fáceis de lembrar do que os números das entidades.</p>
+  
+  <h3>Espaço inquebrável</h3>
+  
+  <p>Uma entidade HTML comumente usada é o espaço inseparável: &amp;nbsp; Um espaço ininterrupto é um espaço que não será dividido em uma nova linha.</p>
+  
+  <p>Duas palavras separadas por um espaço inseparável ficarão juntas (não serão divididas em uma nova linha). Isso é útil quando quebrar as palavras pode ser perturbador.</p>
+  
+  <p>Exemplos:</p>
+  
+  <ul>
+    <li>§ 10</li>
+    <li>10 km/h</li>
+    <li>22h</li>
+  </ul>
+  
+  <p>Outro uso comum do espaço ininterrupto é evitar que os navegadores trunquem espaços em páginas HTML.</p>
+  
+  <p>Se você escrever 10 espaços no seu texto, o navegador removerá 9 deles. Para adicionar espaços reais ao seu texto, você pode usar o &amp;nbsp; entidade de personagem.</p>
+  
+  <p><mark> hífen inseparável (-) é usado para definir um caractere de hífen (-) que não se divide em uma nova linha.</mark></p>
+  
+  <h3>Algumas entidades úteis de caracteres HTML</h3>
+  
+  <table>
+    <tr>
+      <th>Result</th>
+      <th>Description</th>
+      <th>Name</th>
+      <th>Number</th>
+    </tr>
+    <tr>
+      <td> </td>
+      <td>non-breaking space</td>
+      <td>&amp;nbsp;</td>
+      <td>&amp;#160;</td>
+    </tr>
+    <tr>
+      <td>&lt;</td>
+      <td>less than</td>
+      <td>&amp;lt;</td>
+      <td>&amp;#60;</td>
+    </tr>
+    <tr>
+      <td>&gt;</td>
+      <td>greater than</td>
+      <td>&amp;gt;</td>
+      <td>&amp;#62;</td>
+    </tr>
+    <tr>
+      <td>&amp;</td>
+      <td>ampersand</td>
+      <td>&amp;amp;</td>
+      <td>&amp;#38;</td>
+    </tr>
+    <tr>
+      <td>"</td>
+      <td>double quotation mark</td>
+      <td>&amp;quot;</td>
+      <td>&amp;#34;</td>
+    </tr>
+    <tr>
+      <td>'</td>
+      <td>single quotation mark</td>
+      <td>&amp;apos;</td>
+      <td>&amp;#39;</td>
+    </tr>
+    <tr>
+      <td>¢</td>
+      <td>cent</td>
+      <td>&amp;cent;</td>
+      <td>&amp;#162;</td>
+    </tr>
+    <tr>
+      <td>£</td>
+      <td>pound</td>
+      <td>&amp;pound;</td>
+      <td>&amp;#163;</td>
+    </tr>
+    <tr>
+      <td>¥</td>
+      <td>yen</td>
+      <td>&amp;yen;</td>
+      <td>&amp;#165;</td>
+    </tr>
+    <tr>
+      <td>€</td>
+      <td>euro</td>
+      <td>&amp;euro;</td>
+      <td>&amp;#8364;</td>
+    </tr>
+    <tr>
+      <td>©</td>
+      <td>copyright</td>
+      <td>&amp;copy;</td>
+      <td>&amp;#169;</td>
+    </tr>
+    <tr>
+      <td>®</td>
+      <td>trademark</td>
+      <td>&amp;reg;</td>
+      <td>&amp;#174;</td>
+    </tr>
+  </table>
+  
+  <h3>Combinando marcas diacríticas</h3>
+  
+  <p>Uma marca diacrítica é um “glifo” adicionado a uma letra.</p>
+  
+  <p>Algumas marcas diacríticas, como grave (̀) e aguda (́) são chamadas de acentos.</p>
+  
+  <p>Marcas diacríticas podem ser usadas em combinação com caracteres alfanuméricos para produzir um caractere que não esteja presente no conjunto de caracteres (codificação) usado na página.</p>
+  
+  <p>Aqui estão alguns exemplos:</p>
+  
+  <table>
+    <tr>
+      <th>Mark</th>
+      <th>Character</th>
+      <th>Construct</th>
+      <th>Result</th>
+    </tr>
+    <tr>
+      <td>̀</td>
+      <td>a</td>
+      <td>a&amp;#768;</td>
+      <td>à</td>
+    </tr>
+    <tr>
+      <td>́</td>
+      <td>a</td>
+      <td>a&amp;#769;</td>
+      <td>á</td>
+    </tr>
+    <tr>
+      <td>̂</td>
+      <td>a</td>
+      <td>a&amp;#770;</td>
+      <td>â</td>
+    </tr>
+    <tr>
+      <td>̃</td>
+      <td>a</td>
+      <td>a&amp;#771;</td>
+      <td>ã</td>
+    </tr>
+    <tr>
+      <td>̀</td>
+      <td>O</td>
+      <td>O&amp;#768;</td>
+      <td>Ò</td>
+    </tr>
+    <tr>
+      <td>́</td>
+      <td>O</td>
+      <td>O&amp;#769;</td>
+      <td>Ó</td>
+    </tr>
+    <tr>
+      <td>̂</td>
+      <td>O</td>
+      <td>O&amp;#770;</td>
+      <td>Ô</td>
+    </tr>
+    <tr>
+      <td>̃</td>
+      <td>O</td>
+      <td>O&amp;#771;</td>
+      <td>Õ</td>
+    </tr>
+  </table>
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+  </script>
+</body>
+</html>

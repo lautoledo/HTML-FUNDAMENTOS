@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Style Guide</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+  <h2>Sempre declarar o tipo de documento</h2>
+  <p>O tipo de documento correto para HTML é:</p>
+  <div class="code-container">
+    <code>&lt;!DOCTYPE html&gt;</code>
+  </div>
+
+  <h2>Use nomes de elementos em letras minúsculas</h2>
+  <p>HTML permite misturar letras maiúsculas e minúsculas nos nomes dos elementos. No entanto, recomendamos usar nomes de elementos em letras minúsculas porque:</p>
+  <ul>
+    <li>Misturar nomes maiúsculos e minúsculos parece ruim</li>
+    <li>Os desenvolvedores normalmente usam nomes em minúsculas</li>
+    <li>Letras minúsculas parecem mais limpas</li>
+    <li>Letras minúsculas são mais fáceis de escrever</li>
+  </ul>
+  <div class="code-container">
+    <code>&lt;body&gt;</code><br>
+    <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+  </div>
+
+  <p>Confira:</p>
+  <p>This is a paragraph.</p>
+
+  <h2>Fechar todos os elementos HTML</h2>
+  <p>Em HTML, você não precisa fechar todos os elementos (por exemplo, o <code>&lt;p&gt;</code> elemento). No entanto, recomendamos fortemente fechar todos os elementos HTML.</p>
+  <div class="code-container">
+    <code>&lt;section&gt;</code><br>
+    <code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+    <code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+    <code>&lt;/section&gt;</code>
+  </div>
+
+  <h2>Use nomes de atributos em letras minúsculas</h2>
+  <p>HTML permite misturar letras maiúsculas e minúsculas em nomes de atributos. No entanto, recomendamos usar nomes de atributos em letras minúsculas.</p>
+  <div class="code-container">
+    <code>&lt;a href="https://github.com/lautoledo"&gt;Visite no github&lt;/a&gt;</code>
+  </div>
+
+  <p>Confira:</p>
+  <a href="https://github.com/lautoledo">Visite no github</a>
+
+  <h2>Sempre citar valores de atributos</h2>
+  <p>HTML permite valores de atributos sem aspas. No entanto, recomendamos citar valores de atributos.</p>
+  <div class="code-container">
+    <code>&lt;table class="striped"&gt;</code>
+  </div>
+
+  <h2>Sempre especifique alt, largura e altura para imagens</h2>
+  <p>É importante sempre especificar o <code>alt</code> atributo para imagens e definir o <code>width</code> e <code>height</code>.</p>
+  <div class="code-container">
+    <code>&lt;img src="html5.gif" alt="HTML5" style="width:128px;height:128px"&gt;</code>
+  </div>
+
+  <p>Confira:</p>
+  <img src="/img/exemploimg.png" alt="HTML5" style="width:128px;height:128px">
+
+  <h2>Espaços e sinais de igual</h2>
+  <p>HTML permite espaços em torno de sinais de igual. Mas sem espaço é mais fácil de ler e agrupa melhor as entidades.</p>
+  <div class="code-container">
+    <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+  </div>
+
+  <h2>Evite longas linhas de código</h2>
+  <p>Tente evitar linhas de código muito longas.</p>
+  <div class="code-container">
+    <code>&lt;body&gt;</code><br>
+    <code>  &lt;h1&gt;Famous Cities&lt;/h1&gt;</code><br>
+    <code>  &lt;h2&gt;Tokyo&lt;/h2&gt;</code><br>
+    <code>  &lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.&lt;/p&gt;</code><br>
+    <code>&lt;/body&gt;</code>
+  </div>
+
+  <h2>Linhas em branco e recuo</h2>
+  <p>Não adicione linhas em branco, espaços ou recuos sem motivo.</p>
+  <p>Para facilitar a leitura, adicione dois espaços de recuo. Não use a tecla Tab.</p>
+  <div class="code-container">
+    <code>&lt;body&gt;</code><br>
+    <code>  &lt;h1&gt;Famous Cities&lt;/h1&gt;</code><br>
+    <code>  &lt;h2&gt;Tokyo&lt;/h2&gt;</code><br>
+    <code>    &lt;p&gt;Tokyo is the capital of Japan, the center of the Greater Tokyo Area, and the most populous metropolitan area in the world.&lt;/p&gt;</code><br>
+    <code>&lt;/body&gt;</code>
+  </div>
+
+  <h2>Bom exemplo de tabela</h2>
+  <div class="code-container">
+    <code>&lt;table&gt;</code><br>
+    <code>  &lt;tr&gt;</code><br>
+    <code>    &lt;th&gt;Name&lt;/th&gt;</code><br>
+    <code>    &lt;th&gt;Description&lt;/th&gt;</code><br>
+    <code>  &lt;/tr&gt;</code><br>
+    <code>  &lt;tr&gt;</code><br>
+    <code>    &lt;td&gt;A&lt;/td&gt;</code><br>
+    <code>    &lt;td&gt;Description of A&lt;/td&gt;</code><br>
+    <code>  &lt;/tr&gt;</code><br>
+    <code>&lt;/table&gt;</code>
+  </div>
+
+  <p>Confira:</p>
+  <table>
+    <tr>
+      <th>Name</th>
+      <th>Description</th>
+    </tr>
+    <tr>
+      <td>A</td>
+      <td>Description of A</td>
+    </tr>
+    <tr>
+      <td>B</td>
+      <td>Description of B</td>
+    </tr>
+  </table>
+
+  <h2>Bom exemplo de lista</h2>
+  <div class="code-container">
+    <code>&lt;ul&gt;</code><br>
+    <code>  &lt;li&gt;London&lt;/li&gt;</code><br>
+    <code>  &lt;li&gt;Paris&lt;/li&gt;</code><br>
+    <code>  &lt;li&gt;Tokyo&lt;/li&gt;</code><br>
+    <code>&lt;/ul&gt;</code>
+  </div>
+
+  <p>Confira:</p>
+  <ul>
+    <li>London</li>
+    <li>Paris</li>
+    <li>Tokyo</li>
+  </ul>
+
+  <h2>Nunca pule o elemento &lt;title&gt;</h2>
+  <p>O <code>&lt;title&gt;</code> elemento é obrigatório em HTML.</p>
+  <p>O conteúdo do título de uma página é muito importante para a otimização de mecanismos de pesquisa (SEO)! O título da página é usado pelos algoritmos do mecanismo de pesquisa para decidir a ordem ao listar as páginas nos resultados da pesquisa.</p>
+  <div class="code-container">
+    <code>&lt;title&gt;HTML Style Guide and Coding Conventions&lt;/title&gt;</code>
+  </div>
+
+  <h2>Omitindo &lt;html&gt; e &lt;body&gt;?</h2>
+  <p>Uma página HTML será validada sem as tags <code>&lt;html&gt;</code> e <code>&lt;body&gt;</code>:</p>
+  <div class="code-container">
+    <code>&lt;!DOCTYPE html&gt;</code><br>
+    <code>&lt;head&gt;</code><br>
+    <code>  &lt;title&gt;Page Title&lt;/title&gt;</code><br>
+    <code>&lt;/head&gt;</code><br>
+    <code>&lt;h1&gt;This is a heading&lt;/h1&gt;</code><br>
+    <code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+  </div>
+
+  <h2>Omitindo &lt;head&gt;?</h2>
+  <p>A tag HTML <code>&lt;head&gt;</code> também pode ser omitida. Os navegadores adicionarão todos os elementos antes de <code>&lt;body&gt;</code> a um <code>&lt;head&gt;</code> elemento padrão.</p>
+  <div class="code-container">
+    <code>&lt;!DOCTYPE html&gt;</code><br>
+    <code>&lt;html&gt;</code><br>
+    <code>  &lt;title&gt;Page Title&lt;/title&gt;</code><br>
+    <code>&lt;body&gt;</code><br>
+    <code>  &lt;h1&gt;This is a heading&lt;/h1&gt;</code><br>
+    <code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+    <code>&lt;/body&gt;</code><br>
+    <code>&lt;/html&gt;</code>
+  </div>
+
+  <h2>Fechar elementos HTML vazios?</h2>
+  <p>Em HTML, é opcional fechar elementos vazios.</p>
+  <div class="code-container">
+    <code>&lt;meta charset="utf-8"&gt;</code>
+  </div>
+
+  <h2>Adicione o atributo lang</h2>
+  <p>Você deve sempre incluir o <code>lang</code> atributo dentro da <code>&lt;html&gt;</code> tag, para declarar o idioma da página web.</p>
+  <div class="code-container">
+    <code>&lt;html lang="pt-BR"&gt;</code><br>
+    <code>  &lt;head&gt;</code><br>
+    <code>    &lt;title&gt;Page Title&lt;/title&gt;</code><br>
+    <code>  &lt;/head&gt;</code><br>
+    <code>&lt;body&gt;</code><br>
+    <code>  &lt;h1&gt;This is a heading&lt;/h1&gt;</code><br>
+    <code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+    <code>&lt;/body&gt;</code><br>
+    <code>&lt;/html&gt;</code>
+  </div>
+
+  <h2>Metadados</h2>
+  <p>Para garantir a interpretação adequada e a indexação correta do mecanismo de pesquisa, tanto o idioma quanto a codificação de caracteres devem ser definidos o mais cedo possível em um documento HTML:</p>
+  <div class="code-container">
+    <code>&lt;!DOCTYPE html&gt;</code><br>
+    <code>&lt;html lang="en-us"&gt;</code><br>
+    <code>  &lt;head&gt;</code><br>
+    <code>    &lt;meta charset="UTF-8"&gt;</code><br>
+    <code>    &lt;title&gt;Page Title&lt;/title&gt;</code><br>
+    <code>  &lt;/head&gt;</code><br>
+    <code>&lt;body&gt;</code><br>
+    <code>  &lt;h1&gt;This is a heading&lt;/h1&gt;</code><br>
+    <code>  &lt;p&gt;This is a paragraph.&lt;/p&gt;</code><br>
+    <code>&lt;/body&gt;</code><br>
+    <code>&lt;/html&gt;</code>
+  </div>
+
+  <h2>Configurando a janela de visualização</h2>
+  <p>Você deve incluir o seguinte <code>&lt;meta&gt;</code> elemento em todas as suas páginas da web:</p>
+  <div class="code-container">
+    <code>&lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;</code>
+  </div>
+
+  <h2>Comentários HTML</h2>
+  <p>Comentários curtos devem ser escritos em uma linha:</p>
+  <div class="code-container">
+    <code>&lt;!-- This is a comment --&gt;</code>
+  </div>
+  <p>Comentários que ocupam mais de uma linha devem ser escritos assim:</p>
+  <div class="code-container">
+    <code>&lt;!--</code><br>
+    <code>  This is a long comment example. This is a long comment example.</code><br>
+    <code>  This is a long comment example. This is a long comment example.</code><br>
+    <code>--&gt;</code>
+  </div>
+
+  <h2>Usando folhas de estilo</h2>
+  <p>Use sintaxe simples para vincular folhas de estilo:</p>
+  <div class="code-container">
+    <code>&lt;link rel="stylesheet" href="styles.css"&gt;</code>
+  </div>
+
+  <h2>Acessando elementos HTML com JavaScript</h2>
+  <p>Usar código HTML "desarrumado" pode resultar em erros de JavaScript.</p>
+  <div class="code-container">
+    <code>getElementById("Demo").innerHTML = "Hello";</code><br>
+    <code>getElementById("demo").innerHTML = "Hello";</code>
+  </div>
+
+  <h2>Use nomes de arquivos em minúsculas</h2>
+  <p>Alguns servidores web diferenciam maiúsculas de minúsculas em relação aos nomes de arquivos.</p>
+  <div class="code-container">
+    <code>london.jpg</code>
+  </div>
+
+  <h2>Extensões de arquivo</h2>
+  <p>Os arquivos HTML devem ter uma extensão <code>.html</code>.</p>
+  <div class="code-container">
+    <code>index.html</code>
+  </div>
+
+
+</div>
+
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+  </script>
+  
+
+</body>
+</html>

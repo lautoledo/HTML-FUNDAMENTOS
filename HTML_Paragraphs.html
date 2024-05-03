@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Paragraphs</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h2>Parágrafos HTML</h2>
+  <p>Um parágrafo sempre inicia em uma nova linha e geralmente consiste em um bloco de texto.</p>
+  
+  <h2>Parágrafos HTML</h2>
+  <p>O elemento HTML <code>&lt;p&gt;</code> define um parágrafo.</p>
+  <p>Um parágrafo sempre começa em uma nova linha e os navegadores automaticamente adicionam algum espaço em branco (uma margem) antes e depois de um parágrafo.</p>
+  
+  <p>Exemplo</p>
+  <code>&lt;p&gt;Este é um parágrafo.&lt;/p&gt;</code>
+  <code>&lt;p&gt;Este é outro parágrafo.&lt;/p&gt;</code>
+  
+  <h2>Exibição HTML</h2>
+  <p>Você não pode prever como o HTML será visualizado.</p>
+  <p>Telas grandes ou pequenas e janelas redimensionadas criarão resultados diferentes.</p>
+  <p>Com HTML, você não pode alterar a exibição adicionando espaços ou linhas extras em seu código HTML.</p>
+  <p>O navegador removerá automaticamente quaisquer espaços e linhas extras quando a página for exibida:</p>
+  
+  <p>Exemplo</p>
+  <code>&lt;p&gt;
+  Este parágrafo
+  contém várias linhas
+  no código-fonte,
+  mas o navegador
+  as ignora.
+  &lt;/p&gt;</code>
+
+
+  <code>&lt;p&gt;
+  Este parágrafo
+  contém         muitos espaços
+  no código-fonte,
+  mas o navegador
+  os ignora.
+  &lt;/p&gt;</code>
+
+
+  <h2>Regras Horizontais HTML</h2>
+  <p>A tag <code>&lt;hr&gt;</code> define uma quebra temática em uma página HTML e geralmente é exibida como uma linha horizontal.</p>
+  <p>O <code>&lt;hr&gt;</code> elemento é usado para separar o conteúdo (ou definir uma alteração) em uma página HTML:</p>
+  
+  <p>Exemplo</p>
+  
+  <h1>Este é o título 1</h1>
+  <p>Este é um texto.</p>
+  <hr>
+  <h2>Este é o título 2</h2>
+  <p>Este é outro texto.</p>
+  <hr>
+  
+  <h2>Quebras de Linha HTML</h2>
+  <p>O elemento HTML <code>&lt;br&gt;</code> define uma quebra de linha.</p>
+  <p>Use <code>&lt;br&gt;</code> se desejar uma quebra de linha (uma nova linha) sem iniciar um novo parágrafo:</p>
+  
+  <p>Exemplo</p>
+  <p>Este é<br>um parágrafo<br>com quebras de linha.</p>
+  
+  <h2>O Problema do Poema</h2>
+  <p>Este poema será exibido em uma única linha:</p>
+  
+  <p>Exemplo</p>
+  <div class="code-container" style="align-items: center;">
+  <code>&lt;p&gt;My Bonnie lies over the ocean. My Bonnie lies over the sea. My Bonnie lies over the ocean. Oh, bring back my Bonnie to me.&lt;/p&gt;</code>
+  </div>
+
+  <h2>Solução - O elemento HTML <code>&lt;pre&gt;</code></h2>
+  <p>O elemento HTML <code>&lt;pre&gt;</code> define texto pré-formatado.</p>
+  <p>O texto dentro de um <code>&lt;pre&gt;</code> elemento é exibido em uma fonte de largura fixa (geralmente Courier) e preserva espaços e quebras de linha:</p>
+  
+  <p>Exemplo</p>
+  <pre>
+    My Bonnie lies over the ocean.
+  
+    My Bonnie lies over the sea.
+  
+    My Bonnie lies over the ocean.
+  
+    Oh, bring back my Bonnie to me.
+  </pre>
+
+
+
+
+</div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+</body>
+</html>

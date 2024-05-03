@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Colors</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Basic</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">HTML Elements</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">HTML Attributes</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+  
+  <h2>Cores HTML</h2>
+  <p>As cores HTML são especificadas com nomes de cores predefinidos ou com valores RGB, HEX, HSL, RGBA ou HSLA.</p>
+
+  <h3>Nomes de algumas cores:</h3>
+  <div class="cores">
+<h1 style="background-color:Tomato;">Tomato</h1>
+<h1 style="background-color:Orange;">Orange</h1>
+<h1 style="background-color:DodgerBlue;">DodgerBlue</h1>
+<h1 style="background-color:MediumSeaGreen;">MediumSeaGreen</h1>
+<h1 style="background-color:Gray;">Gray</h1>
+<h1 style="background-color:SlateBlue;">SlateBlue</h1>
+<h1 style="background-color:Violet;">Violet</h1>
+<h1 style="background-color:LightGray;">LightGray</h1>
+</div>
+  <p>HTML suporta 140 nomes de cores padrão.</p>
+
+  <h3>Cor de fundo</h3>
+  <p>Você pode definir a cor de fundo dos elementos HTML, confira:</p>
+
+  <div class="cores">
+  <h1 style="background-color:DodgerBlue;">Hello World</h1>
+
+<p style="background-color:Tomato;">
+Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
+Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+</p>
+</div>
+
+<p>Exemplo:</p>
+  <div class="code-container">
+    <code><pre>
+    &lt;h1 style="background-color:DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+    &lt;p style="background-color:Tomato;"&gt;Lorem ipsum...&lt;/p&gt;
+    </pre></code>
+  </div>
+
+  <h3>Cor do texto</h3>
+  <p>Em HTML, é possível brincar e abusar com as cores, como mudar a cor do texto por exemplo.</p>
+  <p>Exemplo</p>
+
+  <div class="code-container">
+    <code><pre>
+    &lt;h1 style="color:Tomato;"&gt;Hello World&lt;/h1&gt;
+    &lt;p style="color:DodgerBlue;"&gt;Lorem ipsum...&lt;/p&gt;
+    &lt;p style="color:MediumSeaGreen;"&gt;Ut wisi enim...&lt;/p&gt;
+    </pre></code>
+  </div>
+
+  <p>Confira:</p>
+  <h3 style="color:Tomato;">Hello World</h3>
+
+<p style="color:DodgerBlue;">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.</p>
+
+<p style="color:MediumSeaGreen;">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</p>
+
+
+  <h3>Cor da borda</h3>
+  <p>Exemplo:</p>
+  <div class="code-container">
+    <code><pre>
+    &lt;h1 style="border:2px solid Tomato;"&gt;Hello World&lt;/h1&gt;
+    &lt;h1 style="border:2px solid DodgerBlue;"&gt;Hello World&lt;/h1&gt;
+    &lt;h1 style="border:2px solid Violet;"&gt;Hello World&lt;/h1&gt;
+    </pre></code>
+  </div>
+
+  <p>Confira:</p>
+  <div class="cores">
+  <h1 style="border: 2px solid Tomato;">Hello World</h1>
+
+<h1 style="border: 2px solid DodgerBlue;">Hello World</h1>
+
+<h1 style="border: 2px solid Violet;">Hello World</h1>
+</div>
+
+  <h3>Valores de cores</h3>
+  <p>Em HTML, as cores também podem ser especificadas usando valores RGB, valores HEX, valores HSL, valores RGBA e valores HSLA.</p>
+  <p>Os três elementos &lt;div&gt; a seguir têm sua cor de fundo definida com valores RGB, HEX e HSL:</p>
+
+  <div class="cores">
+  <h1 style="background-color:rgb(255, 99, 71);">rgb(255, 99, 71)</h1>
+<h1 style="background-color:#ff6347;">#ff6347</h1>
+<h1 style="background-color:hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</h1>
+
+<p>Igual ao nome da cor "Tomate", mas 50% transparente:</p>
+<h1 style="background-color:rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</h1>
+<h1 style="background-color:hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</h1>
+</div>
+
+<p>Exemplo de código:</p>
+  <div class="code-container">
+    <code><pre>
+    &lt;h1 style="background-color:rgb(255, 99, 71);"&gt;...&lt;/h1&gt;
+    &lt;h1 style="background-color:#ff6347;"&gt;...&lt;/h1&gt;
+    &lt;h1 style="background-color:hsl(9, 100%, 64%);"&gt;...&lt;/h1&gt;
+
+    &lt;h1 style="background-color:rgba(255, 99, 71, 0.5);"&gt;...&lt;/h1&gt;
+    &lt;h1 style="background-color:hsla(9, 100%, 64%, 0.5);"&gt;...&lt;/h1&gt;
+    </pre></code>
+  </div>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+    </script>
+
+</div>
+</body>
+</html>

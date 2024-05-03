@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Class</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+        <h2>Atributo de classe HTML</h2>
+        <p>O atributo HTML class é usado para especificar uma classe para um elemento HTML.</p>
+
+        <p>Vários elementos HTML podem compartilhar a mesma classe.</p>
+
+        <h3>Usando o atributo class</h3>
+        <p>O atributo class é frequentemente usado para apontar para um nome de classe em uma folha de estilo. Também pode ser usado por JavaScript para acessar e manipular elementos com o nome de classe específico.</p>
+
+        <p>No exemplo a seguir temos três elementos <code>&lt;div&gt;</code> com um atributo class com o valor “cidade”. Todos os três elementos <code>&lt;div&gt;</code> serão estilizados igualmente de acordo com a definição de estilo na folha de estilo:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html&gt;<br>
+                &lt;head&gt;<br>
+                &lt;style&gt;<br>
+                .city {<br>
+                &nbsp;&nbsp;background-color: tomato;<br>
+                &nbsp;&nbsp;color: white;<br>
+                &nbsp;&nbsp;border: 2px solid black;<br>
+                &nbsp;&nbsp;margin: 20px;<br>
+                &nbsp;&nbsp;padding: 20px;<br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br><br>
+
+                &lt;div class="city"&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;London&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;London is the capital of England.&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+
+                &lt;div class="city"&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Paris&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+
+                &lt;div class="city"&gt;<br>
+                &nbsp;&nbsp;&lt;h2&gt;Tokyo&lt;/h2&gt;<br>
+                &nbsp;&nbsp;&lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;<br>
+                &lt;/div&gt;<br><br>
+
+                &lt;/body&gt;<br>
+                &lt;/html&gt;
+            </code>
+        </div>
+
+        <p><mark>Dica: O <code>class</code> atributo pode ser usado em qualquer elemento HTML.</mark></p>
+        <p><mark>Nota: O nome da classe diferencia maiúsculas de minúsculas!</mark></p>
+        
+
+        <h3>Sintaxe da classe</h3>
+        <p>Para criar uma classe, escreva um ponto final (.), seguido por um nome de classe. Em seguida, defina as propriedades CSS entre chaves {}:</p>
+
+        <p>Exemplo</p>
+        <div class="code-container">
+            <code>
+                &lt;style&gt;<br>
+                .city {<br>
+                &nbsp;&nbsp;background-color: tomato;<br>
+                &nbsp;&nbsp;color: white;<br>
+                &nbsp;&nbsp;padding: 10px;<br>
+                }<br>
+                &lt;/style&gt;<br><br>
+
+                &lt;h2 class="city"&gt;London&lt;/h2&gt;<br>
+                &lt;p&gt;London is the capital of England.&lt;/p&gt;<br><br>
+
+                &lt;h2 class="city"&gt;Paris&lt;/h2&gt;<br>
+                &lt;p&gt;Paris is the capital of France.&lt;/p&gt;<br><br>
+
+                &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;<br>
+                &lt;p&gt;Tokyo is the capital of Japan.&lt;/p&gt;
+            </code>
+        </div>
+
+        <h3>Várias classes</h3>
+        <p>Os elementos HTML podem pertencer a mais de uma classe.</p>
+
+        <p>Para definir múltiplas classes, separe os nomes das classes com um espaço, por exemplo, <code>&lt;div class="city main"&gt;</code>. O elemento será estilizado de acordo com todas as classes especificadas.</p>
+
+        <p>No exemplo a seguir, o primeiro <code>&lt;h2&gt;</code> elemento pertence à classe city e também à classe main, e obterá os estilos CSS de ambas as classes:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;h2 class="city main"&gt;London&lt;/h2&gt;<br>
+                &lt;h2 class="city"&gt;Paris&lt;/h2&gt;<br>
+                &lt;h2 class="city"&gt;Tokyo&lt;/h2&gt;
+            </code>
+        </div>
+
+        <h3>Diferentes elementos podem compartilhar a mesma classe</h3>
+        <p>Diferentes elementos HTML podem apontar para o mesmo nome de classe.</p>
+
+        <p>No exemplo a seguir, ambos <code>&lt;h2&gt;</code> e <code>&lt;p&gt;</code> apontam para a classe "cidade" e compartilharão o mesmo estilo:</p>
+
+        <div class="code-container">
+            <code>
+                &lt;h2 class="city"&gt;Paris&lt;/h2&gt;<br>
+                &lt;p class="city"&gt;Paris is the capital of France&lt;/p&gt;
+            </code>
+        </div>
+
+</div>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+
+
+</body>
+</html>
