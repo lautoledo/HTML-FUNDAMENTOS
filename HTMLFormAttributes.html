@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Form Atributtes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h2>O atributo de ação</h2>
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php"&gt;<br>
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;<br>
+&lt;input type="text" id="fname" name="fname" value="John"&gt;&lt;br&gt;<br>
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;<br>
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;&lt;br&gt;&lt;br&gt;<br>
+&lt;input type="submit" value="Submit"&gt;<br>
+&lt;/form&gt;
+      </code>
+  </div>
+
+  <p>Este exemplo enviará os dados do formulário para "action_page.php":</p>
+
+  <form action="/action_page.php">
+      <label for="fname">First name:</label><br>
+      <input type="text" id="fname" name="fname" value="John"><br>
+      <label for="lname">Last name:</label><br>
+      <input type="text" id="lname" name="lname" value="Doe"><br><br>
+      <input type="submit" value="Submit">
+  </form>
+
+  <h2>O atributo alvo</h2>
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php" target="_blank"&gt;</code>
+  </div>
+
+  <p>Aqui, o resultado enviado será aberto em uma nova aba do navegador:</p>
+
+  <form action="/action_page.php" target="_blank">
+
+  <h2>O Atributo Método</h2>
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php" method="get"&gt;</code>
+  </div>
+
+  <p>Este exemplo usa o método GET ao enviar os dados do formulário:</p>
+
+  <form action="/action_page.php" method="get">
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php" method="post"&gt;</code>
+  </div>
+
+  <p>Este exemplo usa o método POST ao enviar os dados do formulário:</p>
+
+  <form action="/action_page.php" method="post">
+
+  <h3>Notas sobre GET:</h3>
+
+  <ul>
+      <li>Acrescenta os dados do formulário ao URL, em pares nome/valor</li>
+      <li>NUNCA use GET para enviar dados confidenciais! (os dados do formulário enviado ficam visíveis no URL!)</li>
+      <li>O comprimento de um URL é limitado (2.048 caracteres)</li>
+      <li>Útil para envios de formulários onde um usuário deseja marcar o resultado</li>
+      <li>GET é bom para dados não seguros, como strings de consulta no Google</li>
+  </ul>
+
+  <h3>Notas sobre POST:</h3>
+
+  <ul>
+      <li>Acrescenta os dados do formulário ao corpo da solicitação HTTP (os dados do formulário enviado não são mostrados na URL)</li>
+      <li>POST não tem limitações de tamanho e pode ser usado para enviar grandes quantidades de dados.</li>
+      <li>Os envios de formulários com POST não podem ser marcados como favoritos</li>
+  </ul>
+
+  <p><mark>Dica: Sempre use POST se os dados do formulário contiverem informações confidenciais ou pessoais!</mark></p>
+  
+
+  <h2>O atributo de preenchimento automático</h2>
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php" autocomplete="on"&gt;</code>
+  </div>
+
+  <p>Um formulário com preenchimento automático ativado:</p>
+
+  <form action="/action_page.php" autocomplete="on">
+
+  <h2>O Atributo Novalidate</h2>
+
+  <div class="code-container">
+      <code>&lt;form action="/action_page.php" novalidate&gt;</code>
+  </div>
+
+  <p>Um formulário com um atributo novalidate:</p>
+
+  <form action="/action_page.php" novalidate>
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+</body>
+</html>

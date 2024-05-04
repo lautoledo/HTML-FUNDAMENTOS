@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML vs XHTML</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+    <h1>HTML vs XHTML</h1>
+
+    <h2>O que é XHTML?</h2>
+
+    <p>XHTML é uma versão do HTML mais rígida e baseada em XML.</p>
+
+    <ul>
+        <li>XHTML significa Extensible Hyper Text Markup Language</li>
+        <li>XHTML é uma versão de HTML mais rígida e baseada em XML</li>
+        <li>XHTML é HTML definido como um aplicativo XML</li>
+        <li>XHTML é suportado por todos os principais navegadores</li>
+    </ul>
+
+    <h2>Por que XHTML?</h2>
+
+    <p>XML é uma linguagem de marcação onde todos os documentos devem ser marcados corretamente (ser "bem formados").</p>
+
+    <p>O XHTML foi desenvolvido para tornar o HTML mais extensível e flexível para trabalhar com outros formatos de dados (como XML). Além disso, os navegadores ignoram erros nas páginas HTML e tentam exibir o site mesmo que apresente alguns erros de marcação. Portanto, o XHTML vem com um tratamento de erros muito mais rígido.</p>
+
+
+    <h2>As diferenças mais importantes do HTML</h2>
+
+    <table>
+        <thead>
+            <tr>
+                <th>Diferença</th>
+                <th>Descrição</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>&lt;!DOCTYPE&gt; é obrigatório</td>
+                <td>O documento XHTML deve ter uma declaração XHTML &lt;!DOCTYPE&gt;</td>
+            </tr>
+            <tr>
+                <td>O atributo xmlns em &lt;html&gt; é obrigatório</td>
+                <td>O atributo xmlns em &lt;html&gt; deve especificar o namespace xml do documento</td>
+            </tr>
+            <tr>
+                <td>&lt;html&gt;, &lt;head&gt;, &lt;title&gt; e &lt;body&gt; são obrigatórios</td>
+                <td>Esses elementos devem estar presentes em um documento XHTML</td>
+            </tr>
+            <tr>
+                <td>Os elementos devem sempre estar adequadamente aninhados</td>
+                <td>Os elementos devem estar corretamente aninhados uns nos outros</td>
+            </tr>
+            <tr>
+                <td>Os elementos devem estar sempre fechados</td>
+                <td>Os elementos devem sempre ser fechados corretamente</td>
+            </tr>
+            <tr>
+                <td>Os elementos devem estar sempre em letras minúsculas</td>
+                <td>Os nomes dos elementos devem estar em letras minúsculas</td>
+            </tr>
+            <tr>
+                <td>Os nomes dos atributos devem estar sempre em letras minúsculas</td>
+                <td>Os nomes dos atributos devem ser escritos em letras minúsculas</td>
+            </tr>
+            <tr>
+                <td>Os valores dos atributos devem sempre ser citados</td>
+                <td>Os valores dos atributos devem sempre ser citados</td>
+            </tr>
+            <tr>
+                <td>A minimização de atributos é proibida</td>
+                <td>A minimização de atributos não é permitida em XHTML</td>
+            </tr>
+        </tbody>
+    </table>
+
+    <h3>XHTML - &lt;!DOCTYPE ....&gt; é obrigatório</h3>
+
+    <div class="code-container">
+        <code>&lt;!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN"
+    "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd"&gt;
+&lt;html xmlns="http://www.w3.org/1999/xhtml"&gt;
+&lt;head&gt;
+  &lt;title&gt;Title of document&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+
+  some content here...
+
+&lt;/body&gt;
+&lt;/html&gt;
+        </code>
+    </div>
+
+    <h3>Elementos XHTML devem ser aninhados corretamente</h3>
+
+    <div class="code-container">
+        <code>&lt;b&gt;&lt;i&gt;Some text&lt;/i&gt;&lt;/b&gt;</code>
+    </div>
+
+    <p>Em XHTML, os elementos devem sempre estar adequadamente aninhados uns nos outros, assim:</p>
+
+    <div class="code-container">
+        <code>&lt;b&gt;&lt;i&gt;Some text&lt;/i&gt;&lt;/b&gt;</code>
+    </div>
+
+    <h3>Elementos XHTML devem sempre ser fechados</h3>
+
+    <div class="code-container">
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+        <code>&lt;p&gt;This is another paragraph&lt;/p&gt;</code>
+    </div>
+
+    <h3>Elementos vazios XHTML devem sempre ser fechados</h3>
+
+    <div class="code-container">
+        <code>A break: &lt;br /&gt;</code>
+        <code>A horizontal rule: &lt;hr /&gt;</code>
+        <code>An image: &lt;img src="happy.gif" alt="Happy face" /&gt;</code>
+    </div>
+
+    <h3>Os elementos XHTML devem estar em letras minúsculas</h3>
+
+    <div class="code-container">
+        <code>&lt;body&gt;</code>
+        <code>&lt;p&gt;This is a paragraph&lt;/p&gt;</code>
+    </div>
+
+    <h3>Os nomes dos atributos XHTML devem estar em letras minúsculas</h3>
+
+    <div class="code-container">
+        <code>&lt;a href="https://github.com/lautoledo"&gt;Visite o perfil no github&lt;/a&gt;</code>
+    </div>
+
+    <h3>Valores de atributos XHTML devem ser citados</h3>
+
+    <div class="code-container">
+        <code>&lt;a href="https://github.com/lautoledo"&gt;Visite o perfil no github&lt;/a&gt;</code>
+    </div>
+
+    <h3>A minimização de atributos XHTML é proibida</h3>
+
+    <div class="code-container">
+        <code>&lt;input type="checkbox" name="vehicle" value="car" checked="checked" /&gt;</code>
+        <code>&lt;input type="text" name="lastname" disabled="disabled" /&gt;</code>
+    </div>
+
+</div>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+  </script>
+</body>
+</html>

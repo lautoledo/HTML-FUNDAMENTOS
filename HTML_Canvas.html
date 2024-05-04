@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Canvas</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h2>Gráficos de Tela HTML</h2>
+
+  <p>O elemento HTML &lt;canvas&gt; é usado para desenhar gráficos em uma página da web.</p>
+
+  <p>O gráfico à esquerda é criado com &lt;canvas&gt;. Ele mostra quatro elementos: um retângulo vermelho, um retângulo gradiente, um retângulo multicolorido e um texto multicolorido.</p>
+
+  <h3>O que é tela HTML?</h3>
+
+  <p>O elemento HTML &lt;canvas&gt; é usado para desenhar gráficos dinamicamente, via JavaScript.</p>
+
+  <p>O &lt;canvas&gt; elemento é apenas um contêiner para gráficos. Você deve usar JavaScript para realmente desenhar os gráficos.</p>
+
+  <p>O Canvas possui vários métodos para desenhar caminhos, caixas, círculos, texto e adicionar imagens.</p>
+
+  <p>Canvas é compatível com todos os principais navegadores.</p>
+
+  <h3>Exemplos de tela</h3>
+
+  <p>Uma tela é uma área retangular em uma página HTML. Por padrão, uma tela não tem borda nem conteúdo.</p>
+
+  <p>A marcação fica assim:</p>
+
+  <div class="code-container">
+      <code>&lt;canvas id="myCanvas" width="200" height="100"&gt;&lt;/canvas&gt;</code>
+  </div>
+
+  <canvas id="myCanvas" width="200" height="100"></canvas>
+
+  <p>Nota: Sempre especifique um id atributo (a ser referenciado em um script) e um atributo width e height para definir o tamanho da tela. Para adicionar uma borda, use o style atributo.</p>
+
+  <p>Aqui está um exemplo de uma tela vazia básica:</p>
+
+  <div class="code-container">
+      <code>&lt;canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"&gt;
+&lt;/canvas&gt;</code>
+  </div>
+
+  <canvas id="myCanvas" width="200" height="100" style="border:1px solid #000000;"> </canvas>
+
+  <h4>Adicione um JavaScript</h4>
+
+  <p>Depois de criar a área retangular da tela, você deve adicionar um JavaScript para fazer o desenho.</p>
+
+  <p>Aqui estão alguns exemplos:</p>
+
+  <h4>Desenhe uma linha</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.moveTo(0, 0);
+ctx.lineTo(200, 100);
+ctx.stroke();
+&lt;/script&gt;</code>
+  </div>
+
+  <script> var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); ctx.moveTo(0, 0); ctx.lineTo(200, 100); ctx.stroke(); </script>
+
+  <h4>Desenhar um círculo</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.beginPath();
+ctx.arc(95, 50, 40, 0, 2 * Math.PI);
+ctx.stroke();
+&lt;/script&gt;</code>
+  </div>
+
+  <script> var c = document.getElementById("myCanvas"); var ctx = c.getContext("2d"); ctx.beginPath(); ctx.arc(95, 50, 40, 0, 2 * Math.PI); ctx.stroke(); </script>
+
+  <h4>Desenhe um texto</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.fillText("Hello World", 10, 50);
+&lt;/script&gt;</code>
+  </div>
+  
+
+  <h4>Texto de traço</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+ctx.font = "30px Arial";
+ctx.strokeText("Hello World", 10, 50);
+&lt;/script&gt;</code>
+  </div>
+
+  <h4>Desenhar gradiente linear</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createLinearGradient(0, 0, 200, 0);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+&lt;/script&gt;</code>
+  </div>
+
+  <h4>Desenhar gradiente circular</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+
+// Create gradient
+var grd = ctx.createRadialGradient(75, 50, 5, 90, 60, 100);
+grd.addColorStop(0, "red");
+grd.addColorStop(1, "white");
+
+// Fill with gradient
+ctx.fillStyle = grd;
+ctx.fillRect(10, 10, 150, 80);
+&lt;/script&gt;</code>
+  </div>
+
+  <h4>Desenhar imagem</h4>
+
+  <div class="code-container">
+      <code>&lt;script&gt;
+var c = document.getElementById("myCanvas");
+var ctx = c.getContext("2d");
+var img = document.getElementById("scream");
+ctx.drawImage(img, 10, 10);
+&lt;/script&gt;</code>
+  </div>
+
+</div>
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+</body>
+</html>
+</body>
+</html>

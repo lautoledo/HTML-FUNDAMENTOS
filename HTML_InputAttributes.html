@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Input Attributes</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h2>Atributos de Entrada HTML</h2>
+  <h3>O atributo de valor</h3>
+<p>O atributo input valueespecifica um valor inicial para um campo de entrada:</p>
+    
+  <div class="code-container">
+      <!-- Atributo de valor -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John"><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+  </div>
+
+<h3>Atributo somente leitura</h3>
+<p>O atributo input readonlyespecifica que um campo de entrada é somente leitura.
+
+    Um campo de entrada somente leitura não pode ser modificado (no entanto, um usuário pode tabulá-lo, destacá-lo e copiar o texto dele).
+    
+    O valor de um campo de entrada somente leitura será enviado ao enviar o formulário!</p>
+  
+    <div class="code-container">
+        <code>&lt;form&gt;
+  &lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="fname" name="fname" value="John" readonly&gt;&lt;br&gt;
+  &lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+  &lt;input type="text" id="lname" name="lname" value="Doe"&gt;
+&lt;/form&gt;</code>
+    </div>
+
+      <!-- Atributo somente leitura -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John" readonly><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+ 
+
+  <h3>Atributo desabilitado </h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname" value="John" disabled&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname" value="Doe"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo desabilitado -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" value="John" disabled><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname" value="Doe">
+      </form>
+  
+
+  <h3> Atributo de tamanho</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
+&lt;label for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="pin" name="pin" size="4"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo de tamanho -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" size="50"><br>
+          <label for="pin">PIN:</label><br>
+          <input type="text" id="pin" name="pin" size="4">
+      </form>
+
+  <h3> Atributo maxlength</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname" size="50"&gt;&lt;br&gt;
+&lt;label for="pin"&gt;PIN:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="pin" name="pin" maxlength="4" size="4"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo maxlength -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" size="50"><br>
+          <label for="pin">PIN:</label><br>
+          <input type="text" id="pin" name="pin" maxlength="4" size="4">
+      </form>
+  
+
+  <h3> Atributos mínimo e máximo</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="datemax"&gt;Enter a date before 1980-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemax" name="datemax" max="1979-12-31"&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;label for="datemin"&gt;Enter a date after 2000-01-01:&lt;/label&gt;
+&lt;input type="date" id="datemin" name="datemin" min="2000-01-02"&gt;&lt;br&gt;&lt;br&gt;
+
+&lt;label for="quantity"&gt;Quantity (between 1 and 5):&lt;/label&gt;
+&lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributos mínimo e máximo -->
+      <form>
+          <label for="datemax">Enter a date before 1980-01-01:</label>
+          <input type="date" id="datemax" name="datemax" max="1979-12-31"><br><br>
+      
+          <label for="datemin">Enter a date after 2000-01-01:</label>
+          <input type="date" id="datemin" name="datemin" min="2000-01-02"><br><br>
+      
+          <label for="quantity">Quantity (between 1 and 5):</label>
+          <input type="number" id="quantity" name="quantity" min="1" max="5">
+      </form>
+
+
+  <h3>Atributo múltiplo </h3>
+  
+    <code>&lt;form&gt;
+&lt;label for="files"&gt;Select files:&lt;/label&gt;
+&lt;input type="file" id="files" name="files" multiple&gt;
+&lt;/form&gt;</code>
+
+
+      <!-- Atributo múltiplo -->
+      <form>
+          <label for="files">Select files:</label>
+          <input type="file" id="files" name="files" multiple>
+      </form>
+  
+
+  <h3> Atributo padrão</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="country_code"&gt;Country code:&lt;/label&gt;
+&lt;input type="text" id="country_code" name="country_code"
+pattern="[A-Za-z]{3}" title="Three letter country code"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo padrão -->
+      <form>
+          <label for="country_code">Country code:</label>
+          <input type="text" id="country_code" name="country_code"
+          pattern="[A-Za-z]{3}" title="Three letter country code">
+      </form>
+
+
+
+  <h3>Atributo de espaço reservado </h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="phone"&gt;Enter a phone number:&lt;/label&gt;
+&lt;input type="tel" id="phone" name="phone"
+placeholder="123-45-678"
+pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}"&gt;
+&lt;/form&gt;</code>
+</div>
+  
+      <!-- Atributo de espaço reservado -->
+      <form>
+          <label for="phone">Enter a phone number:</label>
+          <input type="tel" id="phone" name="phone"
+          placeholder="123-45-678"
+          pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </form>
+  
+
+  <h3> Atributo necessário</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="username"&gt;Username:&lt;/label&gt;
+&lt;input type="text" id="username" name="username" required&gt;
+&lt;/form&gt;</code>
+</div>
+
+      <!-- Atributo necessário -->
+      <form>
+          <label for="username">Username:</label>
+          <input type="text" id="username" name="username" required>
+      </form>
+
+
+<h3>Atributo da etapa </h3>
+
+<div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="points"&gt;Points:&lt;/label&gt;
+&lt;input type="number" id="points" name="points" step="3"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo da etapa -->
+      <form>
+          <label for="points">Points:</label>
+          <input type="number" id="points" name="points" step="3">
+      </form>
+
+
+  <h3>Atributo de foco automático</h3>
+
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname" autofocus&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo de foco automático -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname" autofocus><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname">
+      </form>
+  
+
+  <h3>Atributos de altura e largura</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;
+&lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="image" src="img_submit.gif" alt="Submit" width="48" height="48"&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributos de altura e largura -->
+      <form>
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <input type="image" src="/img/exemploimg.png" alt="Submit" width="48" height="48">
+      </form>
+  
+  
+  <h3>Atributo da lista</h3>
+  <div class="code-container">
+    <code>&lt;form&gt;
+&lt;input list="browsers"&gt;
+&lt;datalist id="browsers"&gt;
+&lt;option value="Edge"&gt;
+&lt;option value="Firefox"&gt;
+&lt;option value="Chrome"&gt;
+&lt;option value="Opera"&gt;
+&lt;option value="Safari"&gt;
+&lt;/datalist&gt;
+&lt;/form&gt;</code>
+</div>
+      <!-- Atributo da lista -->
+      <form>
+          <input list="browsers">
+          <datalist id="browsers">
+              <option value="Edge">
+              <option value="Firefox">
+              <option value="Chrome">
+              <option value="Opera">
+              <option value="Safari">
+          </datalist>
+      </form>
+
+
+  <h3>Atributo de preenchimento automático</h3>
+  <div class="code-container">
+    <code>&lt;form action="/action_page.php" autocomplete="on"&gt;
+&lt;label for="fname"&gt;First name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="fname" name="fname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="lname"&gt;Last name:&lt;/label&gt;&lt;br&gt;
+&lt;input type="text" id="lname" name="lname"&gt;&lt;br&gt;&lt;br&gt;
+&lt;label for="email"&gt;Email:&lt;/label&gt;&lt;br&gt;
+&lt;input type="email" id="email" name="email" autocomplete="off"&gt;&lt;br&gt;&lt;br&gt;
+&lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;</code>
+</div>
+
+
+      <!-- Atributo de preenchimento automático -->
+      <form action="/action_page.php" autocomplete="on">
+          <label for="fname">First name:</label><br>
+          <input type="text" id="fname" name="fname"><br><br>
+          <label for="lname">Last name:</label><br>
+          <input type="text" id="lname" name="lname"><br><br>
+          <label for="email">Email:</label><br>
+          <input type="email" id="email" name="email" autocomplete="off"><br><br>
+          <input type="submit" value="Submit">
+      </form>
+  
+
+  
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+</body>
+</html>

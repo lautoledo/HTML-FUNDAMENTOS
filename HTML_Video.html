@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HTML Vídeo</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+  <h2>Vídeo HTML</h2>
+
+  <p>O elemento HTML <code>&lt;video&gt;</code> é usado para mostrar um vídeo em uma página da web.</p>
+
+  <h3>Confira exemplos:</h3>
+
+  <p>Cortesia de Big Buck Bunny :</p>
+
+  <video width="400" controls>
+    <source src="/img/mov_bbb.mp4" type="video/mp4">
+    <source src="mov_bbb.ogg" type="video/ogg">
+    Your browser does not support HTML video.
+  </video>
+  
+  <p>
+  Video courtesy of 
+  <a href="https://www.bigbuckbunny.org/" target="_blank">Big Buck Bunny</a>.
+  </p>
+
+<h3>O elemento HTML <code>&lt;video&gt;</code></h3>
+
+  <p>Para mostrar um vídeo em HTML, use o <code>&lt;video&gt;</code> elemento:</p>
+
+  <div class="code-container">
+      <code>
+          &lt;video width="320" height="240" controls&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+          &nbsp;&nbsp;Your browser does not support the video tag. <br>
+          &lt;/video&gt;
+      </code>
+  </div>
+
+  <h4>Como funciona</h4>
+
+  <p>O <code>controls</code> atributo adiciona controles de vídeo, como reproduzir, pausar e volume.</p>
+
+  <p>É uma boa ideia sempre incluir atributos <code>width</code> e <code>height</code>. Se a altura e a largura não estiverem definidas, a página poderá piscar enquanto o vídeo é carregado.</p>
+
+  <p>O <code>&lt;source&gt;</code> elemento permite que você especifique arquivos de vídeo alternativos que o navegador pode escolher. O navegador usará o primeiro formato reconhecido.</p>
+
+  <p>O texto entre as tags <code>&lt;video&gt;</code> e <code>&lt;/video&gt;</code> só será exibido em navegadores que não suportam o <code>&lt;video&gt;</code> elemento.</p>
+
+  <h3>HTML <code>&lt;video&gt;</code> Reprodução automática</h3>
+
+  <p>Para iniciar um vídeo automaticamente, use o <code>autoplay</code> atributo:</p>
+
+  <div class="code-container">
+      <code>
+          &lt;video width="320" height="240" autoplay&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+          &nbsp;&nbsp;Your browser does not support the video tag. <br>
+          &lt;/video&gt;
+      </code>
+  </div>
+
+  <video width="320" height="240" autoplay>
+    <source src="/img/movie.mp4" type="video/mp4">
+    <source src="movie.ogg" type="video/ogg">
+    Your browser does not support the video tag.
+  </video>
+  
+
+  <p><strong>Observação:</strong> os navegadores Chromium não permitem a reprodução automática na maioria dos casos. No entanto, a reprodução automática silenciada é sempre permitida.</p>
+
+  <p>Adicione <code>muted</code> depois do <code>autoplay</code> para permitir que seu vídeo comece a ser reproduzido automaticamente (mas sem som):</p>
+
+  <div class="code-container">
+      <code>
+          &lt;video width="320" height="240" autoplay muted&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.mp4" type="video/mp4"&gt; <br>
+          &nbsp;&nbsp;&lt;source src="movie.ogg" type="video/ogg"&gt; <br>
+          &nbsp;&nbsp;Your browser does not support the video tag. <br>
+          &lt;/video&gt;
+      </code>
+  </div>
+
+  <h3>Suporte ao navegador</h3>
+
+  <p>Os números na tabela especificam a primeira versão do navegador que oferece suporte total ao <code>&lt;video&gt;</code> elemento.</p>
+
+  <table>
+      <tr>
+          <th>Browser</th>
+          <th>MP4</th>
+          <th>WebM</th>
+          <th>Ogg</th>
+      </tr>
+      <tr>
+          <td>Edge</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Chrome</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Firefox</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+      </tr>
+      <tr>
+          <td>Safari</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>NO</td>
+      </tr>
+      <tr>
+          <td>Opera</td>
+          <td>YES</td>
+          <td>YES</td>
+          <td>YES</td>
+      </tr>
+  </table>
+
+  <h3>Formatos de vídeo HTML</h3>
+
+  <p>Existem três formatos de vídeo suportados: MP4, WebM e Ogg. O suporte do navegador para os diferentes formatos é:</p>
+
+  <table>
+      <tr>
+          <th>Formato de arquivo</th>
+          <th>Tipo de mídia</th>
+      </tr>
+      <tr>
+          <td>MP4</td>
+          <td>video/mp4</td>
+      </tr>
+      <tr>
+          <td>WebM</td>
+          <td>video/webm</td>
+      </tr>
+      <tr>
+          <td>Ogg</td>
+          <td>video/ogg</td>
+      </tr>
+  </table>
+
+  <h3>Vídeo HTML - Métodos, Propriedades e Eventos</h3>
+
+  <p>O HTML DOM define métodos, propriedades e eventos para o <code>&lt;video&gt;</code> elemento.</p>
+
+  <p>Isso permite carregar, reproduzir e pausar vídeos, bem como definir duração e volume.</p>
+
+  <p>Existem também eventos DOM que podem notificá-lo quando um vídeo começa a ser reproduzido, é pausado, etc.</p>
+
+  <p>Exemplo: usando JavaScript</p>
+
+  <div class="code-container">
+      <code>
+          <span style="color: blue;">// Pausa</span> <br>
+          <button onclick="document.getElementById('myVideo').pause()">Pause</button> <br> <br>
+
+          <span style="color: blue;">// Reprodução</span> <br>
+          <button onclick="document.getElementById('myVideo').play()">Play</button> <br> <br>
+
+          <span style="color: blue;">// Tamanho Grande</span> <br>
+          <button onclick="document.getElementById('myVideo').width=600">Grande</button> <br> <br>
+
+          <span style="color: blue;">// Tamanho Pequeno</span> <br>
+          <button onclick="document.getElementById('myVideo').width=320">Pequeno</button> <br> <br>
+
+          <span style="color: blue;">// Tamanho Normal</span> <br>
+          <button onclick="document.getElementById('myVideo').width=420">Normal</button> <br> <br>
+
+          <video id="myVideo" width="320" height="240" controls>
+              <source src="/img/movie.mp4" type="video/mp4">
+              <source src="movie.ogg" type="video/ogg">
+              Your browser does not support the video tag.
+          </video>
+      </code>
+  </div>
+
+  <p><strong>A pausa</strong></p>
+
+  <p>Vídeo cortesia de Big Buck Bunny .</p>
+
+  
+  <h3>Etiquetas de vídeo HTML</h3>
+
+  <table>
+      <tr>
+          <th>Tag</th>
+          <th>Descrição</th>
+      </tr>
+      <tr>
+          <td>&lt;video&gt;</td>
+          <td>Define um vídeo ou filme</td>
+      </tr>
+      <tr>
+          <td>&lt;source&gt;</td>
+          <td>Define vários recursos de mídia para elementos de mídia, como &lt;video&gt; e &lt;audio&gt;</td>
+      </tr>
+      <tr>
+          <td>&lt;track&gt;</td>
+          <td>Define faixas de texto em players de mídia</td>
+      </tr>
+  </table>
+
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+</body>
+</html>
+
