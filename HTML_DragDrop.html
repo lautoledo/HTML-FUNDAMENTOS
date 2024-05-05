@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title> HTML Drag/Drop</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="shortcut icon" href="/img/icon.png" type="image/x-icon">
+</head>
+<body>
+
+<header>
+  <button id="menu-toggle">&#9776; Menu</button>
+  <div class="header-content">
+    <img src="img/logotipo.png" alt="Header Image" class="logo">
+    <a href="https://github.com/lautoledo" title="github"><img src="img/github.png" width="30" height="30" class="github-button"></a>
+  </div>
+</header>
+
+<nav id="menu">
+    <ul>
+      <li><a href="index.html" target="content">Home</a></li>
+  
+    <li><a href="pages/HTML_Basic.html" target="content">HTML Básico</a></li>
+    <li><a href="pages/HTML_Elements.html" target="content">Elementos HTML</a></li>
+    <li><a href="pages/HTML_Attributes.html" target="content">Atributos HTML</a></li>
+
+    </ul>
+</nav>
+
+<!--CONTEÚDO DA PÁGINA-->
+<div class="content">
+
+<h2> HTML Drag/Drop </h2>
+<h3> Em HTML, qualquer elemento pode ser arrastado e solto.</h3>
+<p>Arrastar e soltar é um recurso muito comum. É quando você “pega” um objeto e o arrasta para um local diferente.</p>
+
+<h3>Exemplo de arrastar e soltar HTML</h3>
+<p>O exemplo abaixo é um exemplo simples de arrastar e soltar:</p>
+
+<div class="code-container">
+    <img src="img/drag.png">
+</div>
+
+<h4>Tornar um elemento arrastável</h4>
+<p>Primeiro de tudo: para tornar um elemento arrastável, defina o draggable atributo como verdadeiro:</p>
+
+<div class="code-container">
+    <code>&lt;img draggable="true"&gt;</code>
+</div>
+
+<h4>O que arrastar - ondragstart e setData() </h4>
+<p>Em seguida, especifique o que deve acontecer quando o elemento for arrastado. </p>
+<p>No exemplo acima, o ondragstart atributo chama uma função, drag(event), que especifica quais dados serão arrastados. </p>
+<p>O dataTransfer.setData() método define o tipo de dados e o valor dos dados arrastados: </p>
+
+<div class="code-container">
+    <code>function drag(ev) {
+        ev.dataTransfer.setData("text", ev.target.id);
+      }   </code>
+</div>
+
+<p>Neste caso, o tipo de dados é “texto” e o valor é o id do elemento arrastável (“arrastar1”).</p>
+
+<h4>Onde largar - ondragover </h4>
+<p>O ondragover evento especifica onde os dados arrastados podem ser descartados. </p>
+<p>Por padrão, dados/elementos não podem ser descartados em outros elementos. Para permitir uma queda, devemos evitar o tratamento padrão do elemento. </p>
+<p>Isso é feito chamando o event.preventDefault() método do evento ondragover:</p>
+
+<div class="code-container">
+    <code>event.preventDefault()</code>
+</div>
+
+<h4>Faça o Drop - ondrop</h4>
+<p>Quando os dados arrastados são descartados, ocorre um evento de descarte. </p>
+<p>No exemplo acima, o atributo ondrop chama uma função, drop(event):</p>
+
+
+<div class="code-container">
+    <code>function drop(ev) {
+        ev.preventDefault();
+        var data = ev.dataTransfer.getData("text");
+        ev.target.appendChild(document.getElementById(data));
+      }</code>
+</div>
+
+<p>Confira:</p>
+<style>
+    #div1, #div2 {
+      float: left;
+      width: 100px;
+      height: 35px;
+      margin: 10px;
+      padding: 10px;
+      border: 1px solid black;
+    }
+    </style>
+    <script>
+    function allowDrop(ev) {
+      ev.preventDefault();
+    }
+    
+    function drag(ev) {
+      ev.dataTransfer.setData("text", ev.target.id);
+    }
+    
+    function drop(ev) {
+      ev.preventDefault();
+      var data = ev.dataTransfer.getData("text");
+      ev.target.appendChild(document.getElementById(data));
+    }
+    </script>
+    <h2>Drag and Drop</h2>
+    <p>Drag the image back and forth between the two div elements.</p>
+    
+    <div id="div1" ondrop="drop(event)" ondragover="allowDrop(event)">
+      <img src="/img/exemploimg.png" draggable="true" ondragstart="drag(event)" id="drag1" width="88" height="31">
+    </div>
+    
+    <div id="div2" ondrop="drop(event)" ondragover="allowDrop(event)"></div>
+
+</div>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    document.getElementById('menu-toggle').addEventListener('click', function() {
+      var menu = document.getElementById('menu');
+      if (menu.style.left === "-250px") {
+        menu.style.left = "0";
+      } else {
+        menu.style.left = "-250px";
+      }
+    });
+  });
+</script>
+</body>
+</html>
+

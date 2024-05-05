@@ -145,11 +145,18 @@
 </div>
 <!--CONTEÚDO DA PÁGINA-->
 
-<footer>
-  <p>&copy; 2024 Seu Website. Todos os direitos reservados. Design por Você.</p>
-</footer>
-
-<script src="scripts.js"></script>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.getElementById('menu-toggle').addEventListener('click', function() {
+        var menu = document.getElementById('menu');
+        if (menu.style.left === "-250px") {
+          menu.style.left = "0";
+        } else {
+          menu.style.left = "-250px";
+        }
+      });
+    });
+  </script>
 
 </body>
 </html>
